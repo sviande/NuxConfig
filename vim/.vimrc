@@ -1,10 +1,10 @@
-syntax on
 set number
 
 set nocompatible              " be iMproved
 filetype off                  " required!
 set t_Co=256
-
+syntax on
+colorscheme slate
 
 " Airline 
 set laststatus=2
