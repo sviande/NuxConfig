@@ -1,0 +1,9 @@
+[user]
+	email = sviande@gmail.com
+	name = Sébastien Viande
+[color]
+	ui = true
+
+[alias]
+	st = status
+	co = checkout
