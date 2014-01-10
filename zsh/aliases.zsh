@@ -17,7 +17,7 @@ alias vi="vim"
 
 alias pong='ping free.fr -i 10'
 
-alias shutdown_webdev='sudo umount /home/moi/dev/code/perso && vboxmanage controlvm WebDev poweroff'
+alias shutdown_webdev='sudo umount -l /home/moi/dev/code/perso && vboxmanage controlvm WebDev poweroff'
 
 alias start_webdev='vboxmanage startvm WebDev --type=headless'
 alias start_webtest='vboxmanage startvm Webtest-home --type=headless'
