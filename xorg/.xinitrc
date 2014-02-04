@@ -2,6 +2,8 @@ xbacklight -set 12 &
 
 xbindkeys &
 
+xrdb ~/.Xresources
+
 /usr/bin/start-pulseaudio-x11 &
 
 pnmixer &
