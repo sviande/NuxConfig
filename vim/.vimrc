@@ -1,5 +1,9 @@
 set number
 
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 set nocompatible              " be iMproved
 filetype off                  " required!
 set t_Co=256
