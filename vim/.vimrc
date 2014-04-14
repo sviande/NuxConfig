@@ -19,3 +19,4 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'bling/vim-airline'
+Bundle 'kien/ctrlp.vim'
