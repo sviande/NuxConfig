@@ -10,10 +10,21 @@ set t_Co=256
 syntax on
 colorscheme slate
 
+" Add keyboard shortcuts
+
+nnoremap <C-t>     :tabnew<CR>
+map <Esc>[27;5;9~ :tabnext<cr>
+map <Esc>[27;6;9~ :tabprevious<cr>
+
 " Airline 
 set laststatus=2
 let g:airline_theme='laederon'
 let g:airline_powerline_fonts=1
+
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMRU'
+let g:ctrlp_by_filename = 0
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
