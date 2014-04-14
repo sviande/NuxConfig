@@ -23,7 +23,7 @@ let g:airline_powerline_fonts=1
 
 "ctrlp
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMRU'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_by_filename = 0
 
 set rtp+=~/.vim/bundle/vundle/
