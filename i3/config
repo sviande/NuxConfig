@@ -150,6 +150,6 @@ bar {
 	position top
 }
 
-new_window 1pixel
+new_window pixel 3
 
-exec feh --bg-center wallpapers/current.png 
+exec feh --bg-center wallpapers/current.jpg
