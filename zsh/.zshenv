@@ -7,7 +7,7 @@ else
         export TERM='xterm-color'
 fi
 
-HISTFILE=~/.history
+HISTFILE=~/.config/zsh/.history
 HISTSIZE=1000
 SAVEHIST=1000
 export HISTFILE SAVEHIST
