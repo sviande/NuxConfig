@@ -23,6 +23,8 @@ bindkey '^R' history-incremental-search-backward
 bindkey  "^[[7~" beginning-of-line
 bindkey  "^[[8~" end-of-line
 
+bindkey -s "^@" 'vi\n'
+
 # Finally, make sure the terminal is in application mode, when zle is
 # active. Only then are the values from $terminfo valid.
 if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
