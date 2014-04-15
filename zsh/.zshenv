@@ -1,5 +1,5 @@
 typeset -U path
-path=(~/.gem/ruby/2.0.0/bin ~/bash /opt/android-sdk/platform-tools $path)
+path=(~/.gem/ruby/2.0.0/bin ~/bin /opt/android-sdk/platform-tools $path)
 
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
         export TERM='xterm-256color'
