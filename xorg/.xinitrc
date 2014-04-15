@@ -1,5 +1,5 @@
-xbacklight -set 12 &
-
+xbacklight -set 6 &
+xset b off
 xbindkeys &
 
 xrdb ~/.Xresources
