@@ -11,7 +11,6 @@ alias ll='ls -la --color'
 alias ls='ls --color=auto'
 alias mount_freebox='sudo mount -t cifs //mafreebox.freebox.fr/Disque\ Dur /media/freebox/ -o user=freebox,password=password,uid=1000,gid=1000'
 alias mount_ivs='sudo mount //webtest/sviande/web'
-alias mount_vault='truecrypt -t --mount /home/moi/dev/util/vault /media/truecrypt'
 alias mount_webdev='sudo mount //mydevel.com/sviande/'
 alias vi="vim"
 
