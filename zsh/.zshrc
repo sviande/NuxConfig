@@ -12,7 +12,7 @@ zstyle ':vcs_info:*' formats       '(%b)'
 
 setopt promptsubst
 
-zstyle ':completion:*:*:git:*' script /usr/share/git/completion/git-completion.zsh 
+ifpath=(/usr/share/zsh/site-functions $fpath)
 export EDITOR=/usr/bin/vim
 
 precmd() {
