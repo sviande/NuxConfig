@@ -151,5 +151,4 @@ bar {
 }
 
 new_window pixel 3
-exec compton -b --config .config/compton/conf
 exec feh --bg-center wallpapers/current.png
