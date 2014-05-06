@@ -8,10 +8,8 @@ xrdb ~/.Xresources
 
 pnmixer &
 dunst &
-  
-eval $(ssh-agent)   
 
+eval $(ssh-agent)
 
-#exec awesome
 exec i3
 
