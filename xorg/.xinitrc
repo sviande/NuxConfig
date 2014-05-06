@@ -7,7 +7,6 @@ xrdb ~/.Xresources
 /usr/bin/start-pulseaudio-x11 &
 
 pnmixer &
-cbatticon &
 dunst &
   
 eval $(ssh-agent)   
