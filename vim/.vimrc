@@ -11,12 +11,16 @@ syntax on
 colorscheme slate
 
 " Add keyboard shortcuts
+let mapleader = ","
+
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 nnoremap <C-t>     :tabnew<CR>
 map <Esc>[27;5;9~ :tabnext<cr>
 map <Esc>[27;6;9~ :tabprevious<cr>
+map <F7> mzgg=G`z<CR>
 
-" Airline 
+" Airline
 set laststatus=2
 let g:airline_theme='laederon'
 let g:airline_powerline_fonts=1
