@@ -16,10 +16,17 @@ let mapleader = ","
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
-nnoremap <C-t>     :tabnew<CR>
-map <Esc>[27;5;9~ :tabnext<cr>
-map <Esc>[27;6;9~ :tabprevious<cr>
 map <F7> mzgg=G`z<CR>
+
+"Tab
+nnoremap tt  :tabnew<CR>
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
 
 " Airline
 set laststatus=2
