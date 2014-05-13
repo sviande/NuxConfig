@@ -3,6 +3,7 @@ set number
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set scrolloff=15
 
 set nocompatible              " be iMproved
 filetype off                  " required!
