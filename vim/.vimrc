@@ -38,8 +38,12 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_by_filename = 0
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'bling/vim-airline'
-Bundle 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
