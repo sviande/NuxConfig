@@ -1,5 +1,5 @@
 set number
-
+set relativenumber
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -9,7 +9,7 @@ set nocompatible              " be iMproved
 filetype off                  " required!
 set t_Co=256
 syntax on
-colorscheme slate
+colorscheme koehler
 
 " Add keyboard shortcuts
 let mapleader = ","
@@ -30,7 +30,6 @@ nnoremap td  :tabclose<CR>
 
 " Airline
 set laststatus=2
-let g:airline_theme='laederon'
 let g:airline_powerline_fonts=1
 
 "ctrlp
