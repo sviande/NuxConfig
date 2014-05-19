@@ -15,6 +15,7 @@ colorscheme koehler
 let mapleader = ","
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+nnoremap <c-b> :CtrlPBuffer<CR>
 
 map <F7> mzgg=G`z<CR>
 
