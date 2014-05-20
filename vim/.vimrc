@@ -44,6 +44,11 @@ call vundle#begin()
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'scrooloose/syntastic'
+Plugin 'groenewege/vim-less'
+Plugin 'skammer/vim-css-color'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'ervandew/supertab'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
