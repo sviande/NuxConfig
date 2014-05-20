@@ -18,6 +18,7 @@ nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 nnoremap <c-b> :CtrlPBuffer<CR>
 
 map <F7> mzgg=G`z<CR>
+noremap <F4> :set hlsearch! hlsearch?<CR>
 
 "Tab
 nnoremap tt  :tabnew<CR>
