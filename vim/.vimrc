@@ -42,6 +42,7 @@ let g:ctrlp_cmd = 'CtrlP'
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mustache/vim-mustache-handlebars'
