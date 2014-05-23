@@ -77,44 +77,12 @@ prompt_iom_setup () {
 
 prompt_iom_precmd() {
   setopt noxtrace localoptions extendedglob
-  local prompt_line_1
   vcs_info
-  prompt_iom_choose_prompt
 
-  PS1="$prompt_line_1$prompt_newline$prompt_line_2%B%F{white}$prompt_char %b%f%k"
+  PS1="$prompt_line_1a$prompt_line_1b$prompt_newline$prompt_line_2%B%F{white}$prompt_char %b%f%k"
   PS2="$prompt_line_2$prompt_gfx_bbox_to_mbox%B%F{white}%_> %b%f%k"
   PS3="$prompt_line_2$prompt_gfx_bbox_to_mbox%B%F{white}?# %b%f%k"
   zle_highlight[(r)default:*]="default:fg=$prompt_iom_color4,bold"
 }
 
-prompt_iom_choose_prompt () {
-  local prompt_line_1a_width=${#${(S%%)prompt_line_1a//(\%([KF1]|)\{*\}|\%[Bbkf])}}
-  local prompt_line_1b_width=${#${(S%%)prompt_line_1b//(\%([KF1]|)\{*\}|\%[Bbkf])}}
-
-  local prompt_padding_size=$(( COLUMNS
-                                  - prompt_line_1a_width
-                                  - prompt_line_1b_width ))
-
-  # Try to fit in long path and user@host.
-  if (( prompt_padding_size > 0 )); then
-    local prompt_padding
-    eval "prompt_padding=\${(l:${prompt_padding_size}::${prompt_gfx_hyphen}:)_empty_zz}"
-    prompt_line_1="$prompt_line_1a$prompt_padding$prompt_line_1b"
-    return
-  fi
-
-  prompt_padding_size=$(( COLUMNS - prompt_line_1a_width ))
-
-  # Didn't fit; try to fit in just long path.
-  if (( prompt_padding_size > 0 )); then
-    local prompt_padding
-    eval "prompt_padding=\${(l:${prompt_padding_size}::${prompt_gfx_hyphen}:)_empty_zz}"
-    prompt_line_1="$prompt_line_1a$prompt_padding"
-    return
-  fi
-
-  # Still didn't fit; truncate
-  local prompt_pwd_size=$(( COLUMNS - 5 ))
-  prompt_line_1="$prompt_gfx_tbox$prompt_l_paren%B%F{$prompt_iom_color2}%$prompt_pwd_size<...<%~%<<$prompt_r_paren%b%F{$prompt_iom_color1}$prompt_gfx_hyphen"
-}
 prompt_iom_setup "$@"
