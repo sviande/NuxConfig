@@ -38,6 +38,7 @@ let g:airline_powerline_fonts=1
 "ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_show_hidden = 1
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
