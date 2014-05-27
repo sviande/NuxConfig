@@ -50,7 +50,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'scrooloose/syntastic'
 Plugin 'groenewege/vim-less'
-Plugin 'skammer/vim-css-color'
+Plugin 'ap/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
 
 call vundle#end()            " required
