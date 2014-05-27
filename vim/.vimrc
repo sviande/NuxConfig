@@ -1,3 +1,4 @@
+set exrc
 set number
 set relativenumber
 set expandtab
@@ -54,3 +55,5 @@ Plugin 'hail2u/vim-css3-syntax'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+set secure
