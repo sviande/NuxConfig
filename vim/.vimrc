@@ -1,3 +1,30 @@
+set nocompatible              " be iMproved
+filetype off                  " required!
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'scrooloose/syntastic'
+Plugin 'groenewege/vim-less'
+Plugin 'ap/vim-css-color'
+Plugin 'hail2u/vim-css3-syntax'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" Airline
+set laststatus=2
+let g:airline_powerline_fonts=1
+
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_show_hidden = 1
+
 set exrc
 set number
 set relativenumber
@@ -6,10 +33,8 @@ set shiftwidth=2
 set softtabstop=2
 set scrolloff=15
 set tw=0
-
-set nocompatible              " be iMproved
-filetype off                  " required!
 set t_Co=256
+
 syntax on
 colorscheme koehler
 
@@ -31,29 +56,5 @@ nnoremap tl  :tablast<CR>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
-
-" Airline
-set laststatus=2
-let g:airline_powerline_fonts=1
-
-"ctrlp
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_show_hidden = 1
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'scrooloose/syntastic'
-Plugin 'groenewege/vim-less'
-Plugin 'ap/vim-css-color'
-Plugin 'hail2u/vim-css3-syntax'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 set secure
