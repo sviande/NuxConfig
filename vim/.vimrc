@@ -25,6 +25,9 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_show_hidden = 1
 
+"mustache
+let g:mustache_abbreviations = 1
+
 set exrc
 set number
 set relativenumber
