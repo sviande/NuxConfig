@@ -37,6 +37,11 @@ set softtabstop=2
 set scrolloff=15
 set tw=0
 set t_Co=256
+set encoding=utf-8
+
+"Persistent undo
+set undofile
+set undodir=~/tmp/vim-undo
 
 syntax on
 colorscheme koehler
