@@ -23,6 +23,9 @@ bindkey '^R' history-incremental-search-backward
 bindkey  "^[[7~" beginning-of-line
 bindkey  "^[[8~" end-of-line
 
+bindkey  "^[Od" vi-backward-word
+bindkey  "^[Oc" vi-forward-word
+
 bindkey -s "^@" 'vi\n'
 
 # Finally, make sure the terminal is in application mode, when zle is
