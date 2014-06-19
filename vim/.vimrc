@@ -56,6 +56,11 @@ nnoremap <c-b> :CtrlPBuffer<CR>
 map <F7> mzgg=G`z<CR>
 noremap <F4> :set hlsearch! hlsearch?<CR>
 
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
 "Tab
 nnoremap tt  :tabnew<CR>
 nnoremap th  :tabfirst<CR>
