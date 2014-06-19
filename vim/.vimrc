@@ -40,6 +40,12 @@ set tw=0
 set t_Co=256
 set encoding=utf-8
 
+"Search
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
 "Persistent undo
 set undofile
 set undodir=~/tmp/vim-undo
