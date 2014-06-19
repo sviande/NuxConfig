@@ -29,6 +29,12 @@ let g:ctrlp_show_hidden = 1
 "mustache
 let g:mustache_abbreviations = 1
 
+syntax on
+colorscheme koehler
+
+set cursorline
+hi CursorLine cterm=NONE ctermbg=237
+
 set exrc
 set number
 set relativenumber
@@ -49,9 +55,6 @@ set smartcase
 "Persistent undo
 set undofile
 set undodir=~/tmp/vim-undo
-
-syntax on
-colorscheme koehler
 
 " Add keyboard shortcuts
 let mapleader = ","
