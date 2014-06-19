@@ -30,7 +30,7 @@ let g:ctrlp_show_hidden = 1
 let g:mustache_abbreviations = 1
 
 syntax on
-colorscheme koehler
+colorscheme peachpuff
 
 set cursorline
 hi CursorLine cterm=NONE ctermbg=237
