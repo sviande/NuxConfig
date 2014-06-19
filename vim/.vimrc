@@ -12,6 +12,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'groenewege/vim-less'
 Plugin 'ap/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'https://github.com/vim-scripts/ScrollColors'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
