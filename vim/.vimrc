@@ -51,7 +51,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-hi Search ctermbg=7
+hi Search ctermbg=7 ctermfg=0
 
 "Persistent undo
 set undofile
