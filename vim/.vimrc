@@ -46,6 +46,16 @@ set tw=0
 set t_Co=256
 set encoding=utf-8
 
+"ESC
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif
+
 "Search
 set hlsearch
 set incsearch
