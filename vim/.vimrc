@@ -34,6 +34,8 @@ let g:mustache_abbreviations = 1
 
 "tagbar
 let g:tagbar_phpctags_bin='~/.vim/bundle/tagbar-phpctags.vim/bin/phpctags'
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_autofocus=1
 
 syntax on
 colorscheme peachpuff
