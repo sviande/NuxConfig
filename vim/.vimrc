@@ -13,6 +13,8 @@ Plugin 'groenewege/vim-less'
 Plugin 'ap/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'https://github.com/vim-scripts/ScrollColors'
+Plugin 'majutsushi/tagbar'
+Plugin 'vim-php/tagbar-phpctags.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -29,6 +31,9 @@ let g:ctrlp_show_hidden = 1
 
 "mustache
 let g:mustache_abbreviations = 1
+
+"tagbar
+let g:tagbar_phpctags_bin='~/.vim/bundle/tagbar-phpctags.vim/bin/phpctags'
 
 syntax on
 colorscheme peachpuff
@@ -62,7 +67,6 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-hi Search ctermbg=7 ctermfg=0
 
 "Persistent undo
 set undofile
@@ -81,6 +85,5 @@ noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-
 
 set secure
