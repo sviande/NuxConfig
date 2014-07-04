@@ -42,7 +42,10 @@ colorscheme peachpuff
 set cursorline
 hi CursorLine cterm=NONE ctermbg=237
 
-set exrc
+set hidden "hide non save buffer
+
+set exrc "source vimrc project
+
 set number
 set relativenumber
 set expandtab
