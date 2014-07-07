@@ -2,7 +2,7 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   startx
 fi
 
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 autoload -U colors && colors
 autoload -U promptinit && promptinit
 autoload -Uz vcs_info
@@ -12,8 +12,11 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' formats       '%b'
 
 setopt promptsubst
+setopt correctall #correction
+setopt hist_ignore_all_dups #no double
+setopt autocd
+setopt extendedglob
 
-ifpath=(/usr/share/zsh/site-functions $fpath)
 export EDITOR=/usr/bin/vim
 
 source "$HOME/.config/zsh/bindkeys.zsh"
