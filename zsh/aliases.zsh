@@ -1,4 +1,3 @@
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias dmesg='dmesg -L'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -10,14 +9,8 @@ alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -la --color'
 alias ls='ls --color=auto'
-alias mount_freebox='sudo mount -t cifs //mafreebox.freebox.fr/Disque\ Dur /media/freebox/ -o user=freebox,password=password,uid=1000,gid=1000'
-alias mount_ivs='sudo mount //webtest/sviande/web'
-alias mount_webdev='sudo mount //mydevel.com/sviande/'
+
 alias vi="vim"
+alias svi="sudo -E vim"
 
 alias pong='ping free.fr -i 10'
-
-alias shutdown_webdev='sudo umount -l /home/moi/dev/code/perso && vboxmanage controlvm WebDev poweroff'
-
-alias start_webdev='vboxmanage startvm WebDev --type=headless'
-alias start_webtest='vboxmanage startvm Webtest-home --type=headless'
