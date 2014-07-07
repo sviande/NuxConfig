@@ -44,7 +44,7 @@ prompt_iom_setup () {
   fi
 
   # Colour scheme
-  prompt_iom_color1=${1:-'8m'}    # hyphens
+  prompt_iom_color1=${1:-'8'}    # hyphens
   prompt_iom_color2=${2:-'green'}   # current directory
   prompt_iom_color3=${3:-'cyan'}    # user@host
   prompt_iom_color4=${4:-'grey'}   # user input
