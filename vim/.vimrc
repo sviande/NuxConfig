@@ -46,6 +46,7 @@ set hidden "hide non save buffer
 
 set exrc "source vimrc project
 
+set showcmd
 set number
 set relativenumber
 set expandtab
