@@ -1,0 +1,12 @@
+#!/bin/bash
+state=`cat /proc/acpi/bbswitch | awk -F' ' '{print $2}'`
+
+echo '♞'
+echo '♞'
+
+if [ "$state" == "OFF" ]
+then
+  echo "#A6D1FA\n"
+else
+  echo "#OOFFOO\n"
+fi
