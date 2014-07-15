@@ -18,7 +18,7 @@ set $mod Mod4
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font DejaVu Sans Mono 10
+font DejaVu Sans Mono for Powerline 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -172,7 +172,7 @@ bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf -d ~/.config/i3/i3blocks
     position top
     font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-    font pango:DejaVu Sans Mono 8
+    font pango:DejaVu Sans for Powerline Mono 8
 
     colors {
         separator $base03
