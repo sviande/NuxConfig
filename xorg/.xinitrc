@@ -1,6 +1,4 @@
-xbacklight -set 6 &
 xset b off
-xbindkeys &
 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
   for f in /etc/X11/xinit/xinitrc.d/*; do
@@ -11,9 +9,6 @@ fi
 
 xrdb ~/.Xresources
 
-/usr/bin/start-pulseaudio-x11 &
-
-pnmixer &
 dunst &
 xbindkeys &
 
