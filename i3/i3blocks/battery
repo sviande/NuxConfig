@@ -30,7 +30,11 @@ binmode STDOUT, ':encoding(UTF-8)';
 open (ACPI, 'acpi -b |') or die "Can't exec acpi: $!\n";
 $acpi = <ACPI>;
 close(ACPI);
-
+if ( !defined $acpi) {
+  print "no Batt\n";
+  print "no Batt\n";
+  exit;
+}
 # fail on unexpected output
 if ($acpi !~ /: (\w+), (\d+)%/) {
 	die "$acpi\n";
