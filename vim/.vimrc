@@ -15,6 +15,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'https://github.com/vim-scripts/ScrollColors'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-php/tagbar-phpctags.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -35,6 +36,9 @@ let g:mustache_abbreviations = 1
 "tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autofocus=1
+"NerdTree
+nmap <F2> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen = 1
 
 syntax on
 colorscheme peachpuff
