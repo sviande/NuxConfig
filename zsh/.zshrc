@@ -12,7 +12,6 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' formats       '%b'
 
 setopt promptsubst
-setopt correctall #correction
 setopt hist_ignore_all_dups #no double
 setopt autocd
 setopt extendedglob
