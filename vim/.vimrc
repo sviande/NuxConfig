@@ -87,6 +87,7 @@ set undodir=~/tmp/vim-undo
 let mapleader = ","
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+nnoremap <Leader>bd :bufdo bdelete<CR>
 nnoremap <c-b> :CtrlPBuffer<CR>
 
 map <F7> mzgg=G`z<CR>
