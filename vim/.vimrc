@@ -16,6 +16,7 @@ Plugin 'https://github.com/vim-scripts/ScrollColors'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-php/tagbar-phpctags.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -23,7 +24,6 @@ filetype plugin indent on    " required
 " Airline
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme='understated'
 
 "ctrlp
 let g:ctrlp_map = '<c-p>'
@@ -43,10 +43,9 @@ nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
 syntax on
-colorscheme peachpuff
+colorscheme zenburn
 
 set cursorline
-hi CursorLine cterm=NONE ctermbg=237
 
 set hidden "hide non save buffer
 
