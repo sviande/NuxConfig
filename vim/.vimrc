@@ -24,6 +24,7 @@ filetype plugin indent on    " required
 " Airline
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_theme='molokai'
 
 "ctrlp
 let g:ctrlp_map = '<c-p>'
@@ -43,7 +44,7 @@ nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
 syntax on
-colorscheme zenburn
+colorscheme babymate256
 
 set cursorline
 
