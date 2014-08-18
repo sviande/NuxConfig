@@ -189,3 +189,5 @@ bar {
 
 new_window pixel 3
 exec feh --bg-center wallpapers/current.png
+
+assign [class="Skype"] 10
