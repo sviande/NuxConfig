@@ -191,3 +191,4 @@ new_window pixel 3
 exec feh --bg-center wallpapers/current.png
 
 assign [class="Skype"] 10
+assign [class="Pidgin"] 10
