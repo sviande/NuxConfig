@@ -79,6 +79,12 @@ set incsearch
 set ignorecase
 set smartcase
 
+"Highlight trailing spaces
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match ExtraWhitespace /\s\+$/
+
 "Persistent undo
 set undofile
 set undodir=~/tmp/vim-undo
