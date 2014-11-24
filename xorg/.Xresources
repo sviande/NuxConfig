@@ -6,7 +6,7 @@ URxvt.depth:                         32ursorBlink:  true
 urxvt*cursorColor:  #c1c9c9
 
 URxvt*foreground: #CCCCCC
-URxvt*background: #1F1F1F
+URxvt*background: #000000
 
 !black
 *color0: #222222
