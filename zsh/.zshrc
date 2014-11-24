@@ -2,8 +2,6 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   startx
 fi
 
-fpath=(/usr/share/zsh/site-functions $fpath)
-
 autoload -Uz compinit && compinit
 autoload -U colors && colors
 autoload -U promptinit && promptinit
