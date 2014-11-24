@@ -44,7 +44,7 @@ nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
 syntax on
-colorscheme babymate256
+colorscheme kruby
 
 set cursorline
 
