@@ -1,8 +1,8 @@
 #!/bin/bash
 state=`cat /proc/acpi/bbswitch | awk -F' ' '{print $2}'`
 
-echo '♞'
-echo '♞'
+echo ''
+echo ''
 
 if [ "$state" == "OFF" ]
 then
