@@ -7,4 +7,4 @@
 [alias]
 	st = status
 	co = checkout
-        lg = log --graph --full-history --all --no-prefix --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%x1b[0m%x20%s%x1b[36m%x20%an%x1b[0m%x20"
+        lg = log --graph --full-history --all --no-prefix --color --pretty=format:'%C(red)%h%C(reset)%x09%C(green)%d%C(reset) %s %C(cyan)<%an>%C(reset) %C(blue)(%ar)%C(reset)'
