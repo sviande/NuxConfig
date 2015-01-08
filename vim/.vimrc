@@ -45,6 +45,9 @@ let g:tagbar_autoclose=1
 nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
+" disable complete preview
+set completeopt-=preview
+
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
