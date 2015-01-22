@@ -1,3 +1,21 @@
 snippet xdb "xdebug_break()" b
 xdebug_break($0);
 endsnippet
+
+snippet pfg "public getter" b
+
+public function get`!p snip.rv = t[1].capitalize()`()
+{
+    return $this->${1:property};
+}
+
+endsnippet
+
+snippet pfs "public setter" b
+
+public function set`!p snip.rv = t[1].capitalize()`($$1)
+{
+    return $this->${1:property} = $$1;
+}
+
+endsnippet
