@@ -45,6 +45,10 @@ let g:tagbar_autoclose=1
 nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
+"Syntastic
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_always_populate_loc_list=1
+
 " disable complete preview
 set completeopt-=preview
 
