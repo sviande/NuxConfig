@@ -1,4 +1,5 @@
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  sh ~/bin/startXEnv.sh
   startx
 fi
 

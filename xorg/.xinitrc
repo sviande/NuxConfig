@@ -18,5 +18,6 @@ eval $(ssh-agent)
 
 redshift &
 cat ~/.config/i3/baseConfig > ~/.config/i3/config
+cat ~/.config/i3/config.$DisplayEnv >> ~/.config/i3/config
 
 exec i3
