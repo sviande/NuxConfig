@@ -1,0 +1,22 @@
+
+bar {
+    output eDP1
+    position top
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:Monaco for Powerline 8
+}
+
+
+bar {
+    output HDMI1
+    position top
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:Monaco for Powerline 8
+}
+
+bar {
+    output HDMI2
+    position top
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:Monaco for Powerline 8
+}

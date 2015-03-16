@@ -1,0 +1,9 @@
+
+bar {
+    ouput eDP1
+    status_command SCRIPTS_DIR=~/.config/i3/i3blocks/ i3blocks -c ~/.config/i3/i3blocks.conf
+    tray_output primary
+    position top
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:Monaco for Powerline 8
+}
