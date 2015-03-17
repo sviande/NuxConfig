@@ -1,6 +1,5 @@
-
 bar {
-    ouput eDP1
+    output eDP1
     status_command SCRIPTS_DIR=~/.config/i3/i3blocks/ i3blocks -c ~/.config/i3/i3blocks.conf
     tray_output primary
     position top
