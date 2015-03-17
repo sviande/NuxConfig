@@ -1,0 +1,38 @@
+URxvt*scrollstyle:                   plain
+URxvt*scrollBar:                     false
+URxvt*tintColor:                     white
+<<<<<<< HEAD
+URxvt*font:		             xft:Inconsolata for Powerline:size=10:antialias=true
+=======
+URxvt*font:		             xft:Monaco for Powerline:size=12:antialias=true
+>>>>>>> GUI: update font size for laptop.
+URxvt.depth:                         32ursorBlink:  true
+urxvt*cursorColor:  #c1c9c9
+
+URxvt*foreground: #CCCCCC
+URxvt*background: #000000
+
+!black
+*color0: #222222
+*color8: #666666
+!red
+*color1: #C44242
+*color9: #ED5555
+!green
+*color2: #73BA41
+*color10: #86D64D
+!yellow
+*color3: #E0C650
+*color11: #EDD155
+!blue
+*color4: #3C62AD
+*color12: #5385E8
+!magenta
+*color5: #B7416E
+*color13: #E16A98
+!cyan
+*color6: #478EC1
+*color14: #55ACEE
+!white
+*color7: #CCCCCC
+*color15: #FFFFFF
