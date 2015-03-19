@@ -172,7 +172,7 @@ client.urgent $base02 $base08 $base07 $base08
 # finds out, if available)
 
 new_window pixel 3
-exec feh --bg-center wallpapers/current.png
+exec feh --bg-scale wallpapers/current.png
 
 for_window [class="Galculator"] floating enable
 
