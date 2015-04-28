@@ -32,6 +32,7 @@ let g:airline_theme='molokai'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_open_multiple_files = 'i'
 
 "mustache
 let g:mustache_abbreviations = 1
@@ -86,6 +87,7 @@ set scrolloff=15
 set tw=0
 set t_Co=256
 set encoding=utf-8
+
 
 "ESC
 if ! has('gui_running')
