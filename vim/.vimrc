@@ -130,5 +130,6 @@ noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
+nmap <c-n> :bnext<CR>
 
 set secure
