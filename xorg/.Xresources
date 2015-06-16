@@ -1,7 +1,7 @@
 URxvt*scrollstyle:                   plain
 URxvt*scrollBar:                     false
 URxvt*tintColor:                     white
-URxvt*font:		             xft:DejaVu Sans Mono for Powerline:size=10
+URxvt*font:		             xft:Inconsolata for Powerline:size=14:antialias=true
 URxvt.depth:                         32ursorBlink:  true
 urxvt*cursorColor:  #c1c9c9
 
