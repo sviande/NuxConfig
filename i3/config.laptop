@@ -4,5 +4,5 @@ bar {
     tray_output primary
     position top
     font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-    font pango:Monaco for Powerline 8
+    font pango:Inconsolata for Powerline 9
 }
