@@ -9,6 +9,9 @@
   co = checkout
   lg = log --graph --full-history --all --no-prefix --color --pretty=format:'%C(red)%h%C(reset)%x09%C(green)%d%C(reset) %s %C(cyan)<%an>%C(reset) %C(blue)(%ar)%C(reset)'
   cdiff = diff --cached
+  mt = mergetool
 
 [grep]
   linenumber = true
+[merge]
+  tool = vimdiff
