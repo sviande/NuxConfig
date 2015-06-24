@@ -20,6 +20,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-fugitive'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'jamessan/vim-gnupg'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
