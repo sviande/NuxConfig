@@ -23,4 +23,6 @@ redshift &
 cat ~/.config/i3/baseConfig > ~/.config/i3/config
 cat ~/.config/i3/config.$DisplayEnv >> ~/.config/i3/config
 
+sh ~/.config/xorg/xrandr.$DisplayEnv.sh
+
 exec i3
