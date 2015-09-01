@@ -74,6 +74,7 @@ syntax on
 colorscheme kruby
 
 set cursorline
+hi CursorLine ctermbg=237
 
 set hidden "hide non save buffer
 
