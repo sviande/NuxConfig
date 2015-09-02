@@ -25,6 +25,7 @@ cat ~/.config/i3/config.$DisplayEnv >> ~/.config/i3/config
 
 sh ~/.config/xorg/xrandr.$DisplayEnv.sh
 
+feh --bg-scale wallpapers/current.png &
 compton -b &
 
 exec i3
