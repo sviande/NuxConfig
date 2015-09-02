@@ -178,3 +178,7 @@ for_window [class="Galculator"] floating enable
 
 assign [class="Skype"] 10
 assign [class="Pidgin"] 10
+
+gaps inner 8
+gaps outer 0
+smart_gaps on
