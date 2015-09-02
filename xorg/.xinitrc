@@ -25,4 +25,6 @@ cat ~/.config/i3/config.$DisplayEnv >> ~/.config/i3/config
 
 sh ~/.config/xorg/xrandr.$DisplayEnv.sh
 
+compton -b &
+
 exec i3
