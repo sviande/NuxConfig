@@ -36,9 +36,6 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_open_multiple_files = 'i'
 
-"mustache
-let g:mustache_abbreviations = 1
-
 "tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autofocus=1
@@ -74,7 +71,7 @@ syntax on
 colorscheme kruby
 
 set cursorline
-hi CursorLine ctermbg=237
+autocmd ColorScheme * hi CursorLine ctermbg=237
 
 set hidden "hide non save buffer
 
