@@ -10,11 +10,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ap/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'https://github.com/vim-scripts/ScrollColors'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-php/tagbar-phpctags.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
@@ -22,6 +20,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'kurayama/systemd-vim-syntax'
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -29,7 +28,6 @@ filetype plugin indent on    " required
 " Airline
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme='molokai'
 
 "ctrlp
 let g:ctrlp_map = '<c-p>'
@@ -69,7 +67,9 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 syntax on
-colorscheme kruby
+set background=dark
+let base16colorspace=256
+colorscheme base16-ocean
 
 set cursorline
 autocmd ColorScheme * hi CursorLine ctermbg=237
