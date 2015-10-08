@@ -21,6 +21,7 @@ Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'kurayama/systemd-vim-syntax'
 Plugin 'chriskempson/base16-vim'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
