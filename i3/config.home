@@ -6,6 +6,16 @@ bar {
     tray_output primary
     font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
     font pango:Inconsolata for Powerline 8
+
+    colors {
+        separator $base03
+        background $base01
+        statusline $base05
+        focused_workspace $base0C $base0D $base00
+        active_workspace $base02 $base02 $base07
+        inactive_workspace $base01 $base01 $base03
+        urgent_workspace $base08 $base08 $base07
+    }
 }
 
 
@@ -14,6 +24,16 @@ bar {
     position top
     font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
     font pango:Inconsolata for Powerline 8
+
+    colors {
+        separator $base03
+        background $base01
+        statusline $base05
+        focused_workspace $base0C $base0D $base00
+        active_workspace $base02 $base02 $base07
+        inactive_workspace $base01 $base01 $base03
+        urgent_workspace $base08 $base08 $base07
+    }
 }
 
 bar {
@@ -21,4 +41,14 @@ bar {
     position top
     font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
     font pango:Inconsolata for Powerline 8
+
+    colors {
+        separator $base03
+        background $base01
+        statusline $base05
+        focused_workspace $base0C $base0D $base00
+        active_workspace $base02 $base02 $base07
+        inactive_workspace $base01 $base01 $base03
+        urgent_workspace $base08 $base08 $base07
+    }
 }
