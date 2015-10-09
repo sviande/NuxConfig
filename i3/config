@@ -144,7 +144,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-et $base01 #343d46
+set $base00 #2b303b
+set $base01 #343d46
 set $base02 #4f5b66
 set $base03 #65737e
 set $base04 #a7adba
