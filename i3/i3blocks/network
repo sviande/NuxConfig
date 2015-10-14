@@ -22,7 +22,7 @@ state="$(cat /sys/class/net/$INTERFACE/operstate)"
 if [ "$state" != "up" ]; then
 	echo "$LABEL"
 	echo "$LABEL"
-	echo "#FF0000"
+	echo "#ab4642"
 	exit 0
 fi
 
