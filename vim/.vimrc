@@ -75,6 +75,9 @@ colorscheme base16-ocean
 set cursorline
 autocmd ColorScheme * hi CursorLine ctermbg=237
 
+set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
+set list
+
 set hidden "hide non save buffer
 
 set exrc "source vimrc project
