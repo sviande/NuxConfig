@@ -26,6 +26,8 @@ Plugin 'airblade/vim-gitgutter'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set encoding=utf-8
+
 " Airline
 set laststatus=2
 let g:airline_powerline_fonts=1
@@ -91,7 +93,6 @@ set softtabstop=2
 set scrolloff=15
 set tw=0
 set t_Co=256
-set encoding=utf-8
 
 
 "ESC
