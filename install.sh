@@ -7,7 +7,7 @@ ln -s ~/.config/git/.gitconfig ~/.gitconfig
 ln -s ~/.config/vim/.vimrc ~/.vimrc
 
 vim +PluginInstall +qall
-mkdir ~/tmp/vim-undo
+mkdir -p ~/tmp/vim-undo
 
 ln -s ~/.config/zsh/.zshrc ~/.zshrc
 ln -s ~/.config/zsh/.zprofile ~/.zprofile
