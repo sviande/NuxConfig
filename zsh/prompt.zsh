@@ -49,6 +49,15 @@ prompt_iom_setup () {
   prompt_iom_color3=${3:-'cyan'}    # user@host
   prompt_iom_color4=${4:-'grey'}   # user input
 
+  ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[red]%}"
+  ZSH_THEME_GIT_PROMPT_PREFIX=""
+  ZSH_THEME_GIT_PROMPT_SUFFIX=""
+  ZSH_THEME_GIT_PROMPT_SEPARATOR=" | "
+  ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[red]%}%{◦%G%}"
+  ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[blue]%}%{+%G%}"
+  ZSH_THEME_GIT_PROMPT_BEHIND=" %{↓%G%}"
+  ZSH_THEME_GIT_PROMPT_AHEAD=" %{↑%G%}"
+
   local prompt_gfx_bbox
   prompt_gfx_tbox="%B%F{$prompt_iom_color1}${prompt_gfx_tlc}%b%F{$prompt_iom_color1}${prompt_gfx_hyphen}"
   prompt_gfx_bbox="%B%F{$prompt_iom_color1}${prompt_gfx_blc}${prompt_gfx_hyphen}%b%F{$prompt_iom_color1}"
@@ -59,7 +68,7 @@ prompt_iom_setup () {
   prompt_l_paren="%B%F{black}("
   prompt_r_paren="%B%F{black})"
 
-  vcs_0="%F{red}\$vcs_info_msg_0_"
+  vcs_0="\$(git_super_status)"
 
   prompt_user_host="%B%F{$prompt_iom_color3}%n%F{$prompt_iom_color3}@%F{$prompt_iom_color3}%m%b"
 
@@ -77,7 +86,6 @@ prompt_iom_setup () {
 
 prompt_iom_precmd() {
   setopt noxtrace localoptions extendedglob
-  vcs_info
 
   PS1="$prompt_line_1a$prompt_line_1b$prompt_newline$prompt_line_2%B%F{white}$prompt_char %b%f%k"
   PS2="$prompt_line_2$prompt_gfx_bbox_to_mbox%B%F{white}%_> %b%f%k"

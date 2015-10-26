@@ -22,8 +22,8 @@ setopt extendedglob
 
 export EDITOR=/usr/bin/vim
 
+source "$HOME/.config/zsh-git-prompt/zshrc.sh"
 source "$HOME/.config/zsh/bindkeys.zsh"
 source "$HOME/.config/zsh/aliases.zsh"
 source "$HOME/.config/zsh/prompt.zsh"
 source "$HOME/.config/zsh/functions.zsh"
-
