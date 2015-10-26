@@ -2,6 +2,8 @@
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+git submodule init
+
 ln -s ~/.config/git/.gitconfig ~/.gitconfig
 
 ln -s ~/.config/vim/.vimrc ~/.vimrc
