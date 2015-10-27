@@ -59,8 +59,8 @@ prompt_iom_setup () {
   ZSH_THEME_GIT_PROMPT_AHEAD=" %{↑%G%}"
 
   local prompt_gfx_bbox
-  prompt_gfx_tbox="%B%F{$prompt_iom_color1}${prompt_gfx_tlc}%b%F{$prompt_iom_color1}"
-  prompt_gfx_bbox="%B%F{$prompt_iom_color1}${prompt_gfx_blc}%b%F{$prompt_iom_color1}"
+  prompt_gfx_tbox="%B%F{white}${prompt_gfx_tlc}%b%F{$prompt_iom_color1}"
+  prompt_gfx_bbox="%B%F{white}${prompt_gfx_blc}%b%F{$prompt_iom_color1}"
 
   # This is a cute hack.  Well I like it, anyway.
   prompt_gfx_bbox_to_mbox=$'%{\e[A\r'"%}%B%F{$prompt_iom_color1}${prompt_gfx_mlc}%b%F{$prompt_iom_color1}${prompt_gfx_hyphen}%{"$'\e[B%}'
