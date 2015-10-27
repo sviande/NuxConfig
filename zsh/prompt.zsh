@@ -49,7 +49,7 @@ prompt_iom_setup () {
   prompt_iom_color3=${3:-'cyan'}    # user@host
   prompt_iom_color4=${4:-'grey'}   # user input
 
-  ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[red]%}"
+  ZSH_THEME_GIT_PROMPT_BRANCH=" %{$fg_bold[red]%}"
   ZSH_THEME_GIT_PROMPT_PREFIX=""
   ZSH_THEME_GIT_PROMPT_SUFFIX=""
   ZSH_THEME_GIT_PROMPT_SEPARATOR=" | "
@@ -59,8 +59,8 @@ prompt_iom_setup () {
   ZSH_THEME_GIT_PROMPT_AHEAD=" %{↑%G%}"
 
   local prompt_gfx_bbox
-  prompt_gfx_tbox="%B%F{$prompt_iom_color1}${prompt_gfx_tlc}%b%F{$prompt_iom_color1}${prompt_gfx_hyphen}"
-  prompt_gfx_bbox="%B%F{$prompt_iom_color1}${prompt_gfx_blc}${prompt_gfx_hyphen}%b%F{$prompt_iom_color1}"
+  prompt_gfx_tbox="%B%F{$prompt_iom_color1}${prompt_gfx_tlc}%b%F{$prompt_iom_color1}"
+  prompt_gfx_bbox="%B%F{$prompt_iom_color1}${prompt_gfx_blc}%b%F{$prompt_iom_color1}"
 
   # This is a cute hack.  Well I like it, anyway.
   prompt_gfx_bbox_to_mbox=$'%{\e[A\r'"%}%B%F{$prompt_iom_color1}${prompt_gfx_mlc}%b%F{$prompt_iom_color1}${prompt_gfx_hyphen}%{"$'\e[B%}'
@@ -72,10 +72,10 @@ prompt_iom_setup () {
 
   prompt_user_host="%B%F{$prompt_iom_color3}%n%F{$prompt_iom_color3}@%F{$prompt_iom_color3}%m%b"
 
-  prompt_line_1a="$prompt_gfx_tbox%B%F{$prompt_iom_color2}$prompt_user_host%b $vcs_0%F{$prompt_iom_color1}"
+  prompt_line_1a="$prompt_gfx_tbox%B%F{$prompt_iom_color2}$prompt_user_host%b$vcs_0%F{$prompt_iom_color1}"
   prompt_line_1b=" %F{$prompt_iom_color2}%B%~%b %F{$prompt_iom_color1}"
 
-  prompt_line_2="$prompt_gfx_bbox${prompt_gfx_hyphen}%B%F{white}"
+  prompt_line_2="$prompt_gfx_bbox%B%F{white}"
 
   prompt_char="%(!.#.>)"
 
