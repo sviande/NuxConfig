@@ -33,7 +33,7 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 
 "ctrlp
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_open_multiple_files = 'i'
