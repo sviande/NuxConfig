@@ -19,5 +19,6 @@ xbindkeys &
 
 eval $(ssh-agent)
 
-exec i3
+redshift &
 
+exec i3
