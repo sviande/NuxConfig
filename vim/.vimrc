@@ -30,7 +30,6 @@ set encoding=utf-8
 
 " Airline
 set laststatus=2
-let g:airline_powerline_fonts=1
 
 "ctrlp
 let g:ctrlp_map = '<Leader>p'
