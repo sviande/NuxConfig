@@ -2,11 +2,12 @@
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-git submodule init
+git submodule update --init
 
 ln -s ~/.config/git/.gitconfig ~/.gitconfig
 
 ln -s ~/.config/vim/.vimrc ~/.vimrc
+ln -s ~/.config/plugin ~/.vim/plugin
 
 vim +PluginInstall +qall
 mkdir -p ~/tmp/vim-undo
