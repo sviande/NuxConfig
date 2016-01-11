@@ -16,6 +16,7 @@ source ~/.config/xorg/displayEnv
 
 dunst &
 xbindkeys &
+urxvtd -q -o -f
 
 redshift &
 cat ~/.config/i3/baseConfig > ~/.config/i3/config
