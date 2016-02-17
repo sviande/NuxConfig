@@ -139,4 +139,6 @@ noremap <Left> <nop>
 noremap <Right> <nop>
 nmap <c-n> :bnext<CR>
 
+vnoremap // y/<C-R>"<CR>
+
 set secure
