@@ -93,6 +93,8 @@ set scrolloff=15
 set tw=0
 set t_Co=256
 
+set lazyredraw
+set ttyfast
 
 "ESC
 if ! has('gui_running')
