@@ -7,7 +7,7 @@ git submodule update --init
 ln -s ~/.config/git/.gitconfig ~/.gitconfig
 
 ln -s ~/.config/vim/.vimrc ~/.vimrc
-ln -s ~/.config/plugin ~/.vim/plugin
+ln -s ~/.config/vim/plugin ~/.vim/plugin
 
 vim +PluginInstall +qall
 mkdir -p ~/tmp/vim-undo
