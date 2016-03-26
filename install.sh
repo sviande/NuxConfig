@@ -9,7 +9,7 @@ ln -s ~/.config/git/.gitconfig ~/.gitconfig
 ln -s ~/.config/vim/.vimrc ~/.vimrc
 ln -s ~/.config/vim/plugin ~/.vim/plugin
 
-vim +PluginInstall +qall
+vim -E -s -c "source ~/.vimrc" -c PluginInstall -c qa
 mkdir -p ~/tmp/vim-undo
 
 ln -s ~/.config/zsh/.zshrc ~/.zshrc
