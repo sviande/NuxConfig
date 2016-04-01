@@ -21,6 +21,7 @@ Plugin 'jamessan/vim-gnupg'
 Plugin 'kurayama/systemd-vim-syntax'
 Plugin 'chriskempson/base16-vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'chrisbra/csv.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -56,6 +57,8 @@ set completeopt-=preview
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 
+" csv
+let g:csv_no_conceal = 1
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
