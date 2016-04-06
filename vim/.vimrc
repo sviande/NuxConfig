@@ -21,6 +21,7 @@ Plugin 'kurayama/systemd-vim-syntax'
 Plugin 'chriskempson/base16-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'chrisbra/csv.vim'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -29,6 +30,7 @@ set encoding=utf-8
 
 " Airline
 set laststatus=2
+let g:airline_theme='base16'
 
 "ctrlp
 let g:ctrlp_map = '<Leader>p'
