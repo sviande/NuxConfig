@@ -26,5 +26,6 @@ sh ~/.config/xorg/xrandr.$DisplayEnv.sh
 
 feh --bg-scale wallpapers/current.png &
 compton -b &
+yabar &
 
-exec i3
+exec i3 && exit

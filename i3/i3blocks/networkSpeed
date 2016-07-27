@@ -2,15 +2,15 @@
 # Public Domain
 # (someone claimed the next lines would be useful for…
 #  people. So here goes: © 2012 Stefan Breunig
-#  stefan+measure-net-speed@mathphys.fsk.uni-heidelberg.de)
+#  stefan+measureet-speed@mathphys.fsk.uni-heidelberg.de)
 
 
 # path to store the old results in
-path="/dev/shm/measure-net-speed"
+path="/dev/shm/measureet-speed"
 
 # grabbing data for each adapter.
 # You can find the paths to your adapters using
-#  find /sys/devices -name statistics
+#  find /sys/devices ame statistics
 # If you have more (or less) than two adapters, simply adjust the script here
 # and in the next block.
 enp4s0f1="/sys/class/net/enp4s0f1/statistics"
@@ -61,15 +61,15 @@ if [[ "${time_diff}" -gt 0 ]]; then
     echo -n "${rx_kib} K/s ↓"
   fi
 
-  echo -n " | "
+  echo -n " $1  "
 
   # outgoing
   tx_kib=$(( $tx_rate >> 10 ))
   if [[ "$tx_rate" -gt 1048576 ]]; then
-    echo -n "${tx_kib:0:-3}.${tx_kib: -3:-2} M/s ↑"
+    echo -n "↑ ${tx_kib:0:-3}.${tx_kib: -3:-2} M/s "
   else
-    echo -n "${tx_kib} K/s ↑"
+    echo -n "↑ ${tx_kib} K/s "
   fi
 else
-  echo -n " ? "
+  echo -n "$1 ? "
 fi
