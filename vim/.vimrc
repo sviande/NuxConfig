@@ -22,6 +22,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -60,6 +61,9 @@ let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 
 " csv
 let g:csv_no_conceal = 1
+
+"go
+let g:go_fmt_autosave = 0
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
