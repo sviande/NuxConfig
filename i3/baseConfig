@@ -30,8 +30,9 @@ bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+a kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -nb '#2b303b' -nf '#65737e' -sb '#8fa1b3' -sf '#2b303b'
-bindsym $mod+b exec quickswitch.py
+bindsym $mod+d exec rofi -show run
+bindsym $mod+b exec rofi -show window
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -163,7 +164,7 @@ set $base0D #8fa1b3
 set $base0E #b48ead
 set $base0F #ab7967
 
-client.focused $base0D $base0D $base00 $base01
+client.focused $base08 $base08 $base00 $base01
 client.focused_inactive $base02 $base02 $base03 $base01
 client.unfocused $base01 $base01 $base03 $base01
 client.urgent $base02 $base08 $base07 $base08
