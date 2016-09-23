@@ -28,4 +28,4 @@ feh --bg-scale wallpapers/current.png &
 compton -b &
 yabar &
 
-exec i3 && exit
+exec i3;exit
