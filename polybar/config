@@ -15,7 +15,7 @@ margin-bottom = 0
 [bar/laptop]
 monitor = eDP-1
 dock = false
-width = 1900
+width = 1915
 height = 20
 offset-x = 0
 offset-y = 0
@@ -37,7 +37,7 @@ border-bottom-color = #00000000
 border-top = 5
 border-top-color = #00000000
 
-border-left = 20
+border-left = 5
 border-left-color = #00000000
 
 border-right = 0
@@ -59,15 +59,109 @@ modules-right = volume memory cpu wlan eth temperature battery
 
 tray-position = right
 tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
 
-;wm-restack = bspwm
-;
+[bar/right]
+monitor = VGA1
+dock = false
+width = 1915
+height = 20
+offset-x = 0
+offset-y = 0
+
+;background = ${xrdb:color9}
+background = ${xrdb:color0}
+foreground = ${xrdb:color21}
+
+;lineheight = 1
+;linecolor = #555
+overline-size = 2
+overline-color = #f00
+underline-size = 2
+underline-color = #00f
+
+border-bottom = 0
+border-bottom-color = #00000000
+
+border-top = 5
+border-top-color = #00000000
+
+border-left = 5
+border-left-color = #00000000
+
+border-right = 0
+border-right-color = #00000000
+
+spacing = 1
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Fira Code Retina:pixelsize=11;0
+font-1 = unifont:size=6:heavy:fontformat=truetype;-2
+font-2 = siji:pixelsize=12;0
+
+modules-left = i3 mpd
+modules-center = date
+modules-right = volume memory cpu wlan eth temperature battery
+
+tray-position = right
+tray-padding = 2
+
+[bar/left]
+monitor = HDMI1
+dock = false
+width = 1915
+height = 20
+offset-x = 0
+offset-y = 0
+
+;background = ${xrdb:color9}
+background = ${xrdb:color0}
+foreground = ${xrdb:color21}
+
+;lineheight = 1
+;linecolor = #555
+overline-size = 2
+overline-color = #f00
+underline-size = 2
+underline-color = #00f
+
+border-bottom = 0
+border-bottom-color = #00000000
+
+border-top = 5
+border-top-color = #00000000
+
+border-left = 5
+border-left-color = #00000000
+
+border-right = 0
+border-right-color = #00000000
+
+spacing = 1
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Fira Code Retina:pixelsize=11;0
+font-1 = unifont:size=6:heavy:fontformat=truetype;-2
+font-2 = siji:pixelsize=12;0
+
+modules-left = i3 mpd
+modules-center = date
+modules-right = volume memory cpu wlan eth temperature battery
+
+tray-position = right
+tray-padding = 2
+
+
 [module/i3]
 type = internal/i3
-format = <label-state>
 index-sort = true
+pin-workspaces=true
+format=<label-state>
 
 label-focused = %index%
 label-focused-background = ${xrdb:color19}
@@ -130,7 +224,7 @@ format-connected-underline = ${xrdb:color2}
 format-disconnected-underline = ${xrdb:color20}
 
 label-connected = %upspeed% %essid% %downspeed%
-label-disconnected = %ifname%
+label-disconnected = 
 label-disconnected-foreground = #55
 
 ramp-signal-0 = 
