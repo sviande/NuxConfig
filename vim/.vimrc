@@ -7,7 +7,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
 Plugin 'ap/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'majutsushi/tagbar'
@@ -48,9 +47,6 @@ let g:tagbar_autoclose=1
 nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
-"Syntastic
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_always_populate_loc_list=1
 
 " disable complete preview
 set completeopt-=preview
