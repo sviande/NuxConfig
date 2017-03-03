@@ -22,6 +22,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
+Plugin 'w0rp/ale'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -47,6 +48,10 @@ let g:tagbar_autoclose=1
 nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
+"Ale
+let g:ale_sign_error='XX'
+let g:ale_sign_warning='>>'
+let g:ale_sign_column_always=1
 
 " disable complete preview
 set completeopt-=preview
