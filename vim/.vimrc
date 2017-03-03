@@ -22,6 +22,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
+Plugin 'diepm/vim-rest-console'
 Plugin 'w0rp/ale'
 
 call vundle#end()            " required
