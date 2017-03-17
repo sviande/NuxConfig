@@ -25,6 +25,7 @@ Plugin 'fatih/vim-go'
 Plugin 'diepm/vim-rest-console'
 Plugin 'w0rp/ale'
 Plugin 'avakhov/vim-yaml'
+Plugin 'ludovicchabant/vim-gutentags'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
