@@ -34,7 +34,6 @@ set encoding=utf-8
 
 " Airline
 set laststatus=2
-let g:airline_theme='hybrid'
 
 "ctrlp
 let g:ctrlp_map = '<Leader>p'
