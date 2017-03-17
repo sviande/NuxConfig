@@ -79,9 +79,6 @@ set background=dark
 let base16colorspace=256
 colorscheme base16-ocean
 
-set cursorline
-autocmd ColorScheme * hi CursorLine ctermbg=237
-
 set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
 set list
 
