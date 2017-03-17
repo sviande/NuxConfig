@@ -24,6 +24,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
 Plugin 'diepm/vim-rest-console'
 Plugin 'w0rp/ale'
+Plugin 'avakhov/vim-yaml'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
