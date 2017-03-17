@@ -6,8 +6,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ap/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'majutsushi/tagbar'
@@ -22,6 +21,11 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'fatih/vim-go'
+Plugin 'diepm/vim-rest-console'
+Plugin 'w0rp/ale'
+Plugin 'avakhov/vim-yaml'
+Plugin 'ludovicchabant/vim-gutentags'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -30,7 +34,6 @@ set encoding=utf-8
 
 " Airline
 set laststatus=2
-let g:airline_theme='hybrid'
 
 "ctrlp
 let g:ctrlp_map = '<Leader>p'
@@ -47,19 +50,19 @@ let g:tagbar_autoclose=1
 nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
-"Syntastic
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_always_populate_loc_list=1
+"Ale
+let g:ale_sign_error='XX'
+let g:ale_sign_warning='>>'
+let g:ale_sign_column_always=1
 
 " disable complete preview
 set completeopt-=preview
 
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-
 " csv
 let g:csv_no_conceal = 1
+
+"go
+let g:go_fmt_autosave = 0
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
@@ -75,9 +78,6 @@ syntax on
 set background=dark
 let base16colorspace=256
 colorscheme base16-ocean
-
-set cursorline
-autocmd ColorScheme * hi CursorLine ctermbg=237
 
 set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
 set list
@@ -143,5 +143,7 @@ noremap <Right> <nop>
 nmap <c-n> :bnext<CR>
 
 vnoremap // y/<C-R>"<CR>
+
+com! FormatJSON %!python -m json.tool
 
 set secure

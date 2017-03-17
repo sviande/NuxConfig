@@ -13,3 +13,5 @@ alias vi="vim"
 alias svi="sudo -E vim"
 
 alias pong='ping free.fr -i 10'
+
+alias dit='docker exec -i -t'

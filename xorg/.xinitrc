@@ -1,6 +1,4 @@
-xbacklight -set 6 &
 xset b off
-xbindkeys &
 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
   for f in /etc/X11/xinit/xinitrc.d/*; do
@@ -9,16 +7,25 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+eval $(/usr/bin/gnome-keyring-daemon -d --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 xrdb ~/.Xresources
 
-/usr/bin/start-pulseaudio-x11 &
+source ~/.config/xorg/displayEnv
 
-pnmixer &
 dunst &
 xbindkeys &
-
-eval $(ssh-agent)
+urxvtd -q -o -f
 
 redshift &
+cat ~/.config/i3/baseConfig > ~/.config/i3/config
+cat ~/.config/i3/config.$DisplayEnv >> ~/.config/i3/config
 
-exec i3
+sh ~/.config/xorg/xrandr.$DisplayEnv.sh
+
+feh --bg-scale wallpapers/current.png &
+compton -b &
+polybar laptop &
+
+exec i3;exit

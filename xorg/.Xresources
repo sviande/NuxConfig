@@ -1,7 +1,7 @@
 URxvt*scrollstyle:                   plain
 URxvt*scrollBar:                     false
 URxvt*tintColor:                     white
-URxvt*font:		             xft:Inconsolata for Powerline:size=14:antialias=true
+URxvt*font:             xft:Fira Code Retina:size=9:antialias=true
 URxvt.depth:                         32ursorBlink:  true
 urxvt*cursorColor:  #c1c9c9
 
@@ -55,3 +55,18 @@ urxvt*cursorColor:  #c1c9c9
 *.color19:      base02
 *.color20:      base04
 *.color21:      base06
+
+rofi.font: Fira Code Retina 10
+rofi.opacity: 80
+rofi.fixed-num-lines: true
+rofi.padding: 13
+rofi.bc: base02
+rofi.bw: 4
+rofi.color-enabled: true
+rofi.hide-scrollbar: true
+!                   bg          border      seperator
+rofi.color-window: base00,     base03,     base02
+!                   bg      fg      bgalt   hlbg    hlfg
+rofi.color-normal: base00, base05, base00, base08, base01
+rofi.color-active: base0B, base02, base0B, base08, base01
+rofi.color-urgent: base08, base0A, base08, base08, base01
