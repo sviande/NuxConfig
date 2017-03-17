@@ -144,4 +144,6 @@ nmap <c-n> :bnext<CR>
 
 vnoremap // y/<C-R>"<CR>
 
+com! FormatJSON %!python -m json.tool
+
 set secure
