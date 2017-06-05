@@ -135,6 +135,7 @@ nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 nnoremap <Leader>t :CtrlPTag<CR>
 nnoremap <Leader>bd :bufdo bdelete<CR>
 nnoremap <c-b> :CtrlPBuffer<CR>
+nnoremap <Leader>n :ALENext<CR>
 
 map <F7> mzgg=G`z<CR>
 noremap <F4> :set hlsearch! hlsearch?<CR>
