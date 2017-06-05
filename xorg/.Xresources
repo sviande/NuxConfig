@@ -56,17 +56,12 @@ urxvt*cursorColor:  #c1c9c9
 *.color20:      base04
 *.color21:      base06
 
-rofi.font: Fira Code Retina 10
-rofi.opacity: 80
-rofi.fixed-num-lines: true
-rofi.padding: 13
-rofi.bc: base02
-rofi.bw: 4
-rofi.color-enabled: true
-rofi.hide-scrollbar: true
-!                   bg          border      seperator
-rofi.color-window: base00,     base03,     base02
-!                   bg      fg      bgalt   hlbg    hlfg
-rofi.color-normal: base00, base05, base00, base08, base01
-rofi.color-active: base0B, base02, base0B, base08, base01
-rofi.color-urgent: base08, base0A, base08, base08, base01
+rofi.font:        Fira Code Retina 12
+rofi.color-normal:base00, base05, base00, base08, base00
+rofi.color-urgent:base00, base09, base00, base09, base00
+rofi.color-active:base00, base0B, base00, base0B, base00
+rofi.color-window:base00, base01
+rofi.opacity:     80
+rofi.padding:     4
+rofi.width:       80
+rofi.terminal:    st
