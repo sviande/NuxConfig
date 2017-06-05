@@ -96,6 +96,9 @@ set scrolloff=15
 set tw=0
 set t_Co=256
 
+set wildmenu
+set wildmode=longest:full,full
+
 set lazyredraw
 set ttyfast
 
