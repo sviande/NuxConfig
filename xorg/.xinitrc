@@ -26,6 +26,5 @@ sh ~/.config/xorg/xrandr.$DisplayEnv.sh
 
 feh --bg-scale wallpapers/current.png &
 compton -b &
-polybar laptop &
 
 exec i3;exit
