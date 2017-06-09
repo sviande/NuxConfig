@@ -60,7 +60,7 @@ tray-position = right
 tray-padding = 2
 
 [bar/right]
-monitor = VGA1
+monitor = VGA-1
 dock = false
 width = 1915
 height = 20
@@ -96,9 +96,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Fira Code Retina:pixelsize=11;0
+font-0 = Fira Code Retina:pixelsize=9;0
 font-1 = unifont:size=6:heavy:fontformat=truetype;-2
-font-2 = siji:pixelsize=12;0
+font-2 = WunconSiji:pixelsize=12;0
 
 modules-left = i3 mpd
 modules-center = date
@@ -108,7 +108,7 @@ tray-position = right
 tray-padding = 2
 
 [bar/left]
-monitor = HDMI1
+monitor = HDMI-1
 dock = false
 width = 1915
 height = 20
@@ -144,9 +144,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Fira Code Retina:pixelsize=11;0
+font-0 = Fira Code Retina:pixelsize=9;0
 font-1 = unifont:size=6:heavy:fontformat=truetype;-2
-font-2 = siji:pixelsize=12;0
+font-2 = WunconSiji:pixelsize=12;0
 
 modules-left = i3 mpd
 modules-center = date
@@ -180,9 +180,6 @@ label-visible-padding = 2
 
 [module/mpd]
 type = internal/mpd
-
-host=/home/moi/.mpd/socket
-port=0
 
 format-online = <label-song>  <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>
 
