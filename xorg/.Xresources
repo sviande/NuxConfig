@@ -5,6 +5,11 @@ URxvt*font:             xft:Fira Code Retina:size=9:antialias=true
 URxvt.depth:                         32ursorBlink:  true
 urxvt*cursorColor:  #c1c9c9
 
+URxvt.perl-ext-common: font-size
+URxvt.keysym.C-Up: font-size:increase
+URxvt.keysym.C-Down: font-size:decrease
+URxvt.keysym.C-equal: font-size:reset
+
 ! Base16 Ocean
 ! Scheme: Chris Kempson (http://chriskempson.com)
 
