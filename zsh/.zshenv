@@ -1,5 +1,4 @@
 typeset -U path
-path=(~/.gem/ruby/2.0.0/bin ~/bin /opt/android-sdk/platform-tools ~/dev/go/bin $path)
 
 setopt NO_HUP
 

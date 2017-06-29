@@ -27,4 +27,6 @@ sh ~/.config/xorg/xrandr.$DisplayEnv.sh
 feh --bg-scale wallpapers/current.png &
 compton -b &
 
+PATH=$HOME/.gem/ruby/2.0.0/bin:$HOME/bin:/opt/android-sdk/platform-tools:$HOME/dev/go/bin:$PATH
+
 exec i3;exit
