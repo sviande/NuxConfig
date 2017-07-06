@@ -20,6 +20,8 @@ set $mod Mod4
 # chose a FreeType font, such as:
 font Inconsolata for Powerline 8
 
+workspace_layout tabbed
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
