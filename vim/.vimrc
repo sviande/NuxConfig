@@ -79,7 +79,7 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 syntax on
 set background=dark
 let base16colorspace=256
-colorscheme base16-ocean
+colorscheme base16-dracula
 
 set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
 set list
