@@ -28,9 +28,12 @@ Plugin 'avakhov/vim-yaml'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/html5.vim'
+Plugin 'dpelle/vim-LanguageTool'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+let g:languagetool_jar="/usr/share/java/languagetool/languagetool-commandline.jar"
 
 set encoding=utf-8
 
