@@ -10,7 +10,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ap/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
 Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-fugitive'
@@ -40,6 +39,13 @@ set encoding=utf-8
 " Airline
 set laststatus=2
 
+"netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
 "ctrlp
 let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlP'
@@ -52,8 +58,7 @@ let g:tagbar_autofocus=1
 let g:tagbar_autoclose=1
 
 "NerdTree
-nmap <F2> :NERDTreeToggle<CR>
-let NERDTreeQuitOnOpen = 1
+nmap <F2> :Vexplore<CR>
 
 "Ale
 let g:ale_sign_error='XX'
