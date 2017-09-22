@@ -1,6 +1,7 @@
 [user]
   email = sviande@gmail.com
   name = Sébastien Viande
+
 [color]
   ui = true
 
@@ -12,6 +13,7 @@
   mt = mergetool
   please = push --force-with-lease
   conflicts = diff --name-only --diff-filter=U
+  cia = commit --amend --no-edit
 
 [grep]
   linenumber = true
