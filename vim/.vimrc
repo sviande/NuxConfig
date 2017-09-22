@@ -30,6 +30,8 @@ Plugin 'dpelle/vim-LanguageTool'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Language spell
+au BufRead *.txt setlocal spell spelllang=fr
 let g:languagetool_jar="/usr/share/java/languagetool/languagetool-commandline.jar"
 
 set encoding=utf-8
