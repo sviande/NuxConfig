@@ -26,6 +26,8 @@ Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/html5.vim'
 Plugin 'dpelle/vim-LanguageTool'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
