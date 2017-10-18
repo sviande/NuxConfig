@@ -28,6 +28,8 @@ Plug 'dpelle/vim-LanguageTool'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()            " required
 
