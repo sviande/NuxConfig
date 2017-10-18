@@ -1,37 +1,35 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ap/vim-css-color'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-fugitive'
-Plugin 'shawncplus/phpcomplete.vim'
-Plugin 'jamessan/vim-gnupg'
-Plugin 'kurayama/systemd-vim-syntax'
-Plugin 'chriskempson/base16-vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'chrisbra/csv.vim'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'fatih/vim-go'
-Plugin 'diepm/vim-rest-console'
-Plugin 'w0rp/ale'
-Plugin 'avakhov/vim-yaml'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'mxw/vim-jsx'
-Plugin 'othree/html5.vim'
-Plugin 'dpelle/vim-LanguageTool'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'Quramy/tsuquyomi'
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'gmarik/Vundle.vim'
+Plug 'bling/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ap/vim-css-color'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-fugitive'
+Plug 'shawncplus/phpcomplete.vim'
+Plug 'jamessan/vim-gnupg'
+Plug 'kurayama/systemd-vim-syntax'
+Plug 'chriskempson/base16-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'chrisbra/csv.vim'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'fatih/vim-go'
+Plug 'diepm/vim-rest-console'
+Plug 'w0rp/ale'
+Plug 'avakhov/vim-yaml'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'mxw/vim-jsx'
+Plug 'othree/html5.vim'
+Plug 'dpelle/vim-LanguageTool'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
+Plug 'editorconfig/editorconfig-vim'
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()            " required
 
 " Language spell
 au BufRead *.txt setlocal spell spelllang=fr
