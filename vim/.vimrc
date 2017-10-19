@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'gmarik/Vundle.vim'
 Plug 'bling/vim-airline'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-css-color'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'pangloss/vim-javascript'
@@ -48,13 +47,7 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
-
-"ctrlp
-let g:ctrlp_map = '<Leader>p'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_open_multiple_files = 'i'
-
+"
 "tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autofocus=1
@@ -145,10 +138,12 @@ set undodir=~/tmp/vim-undo
 let mapleader = ","
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
-nnoremap <Leader>t :CtrlPTag<CR>
 nnoremap <Leader>bd :bufdo bdelete<CR>
-nnoremap <c-b> :CtrlPBuffer<CR>
 nnoremap <Leader>n :ALENext<CR>
+
+nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>bb :Buffers<CR>
+nnoremap <Leader>t :Tags<CR>
 
 map <F7> mzgg=G`z<CR>
 noremap <F4> :set hlsearch! hlsearch?<CR>
