@@ -3,7 +3,6 @@ filetype off                  " required!
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'gmarik/Vundle.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color'
 Plug 'hail2u/vim-css3-syntax'
@@ -58,13 +57,6 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
 "
-"tagbar
-nmap <F8> :TagbarToggle<CR>
-let g:tagbar_autofocus=1
-let g:tagbar_autoclose=1
-
-"NerdTree
-nmap <F2> :Vexplore<CR>
 
 "Ale
 let g:ale_sign_error='XX'
@@ -76,19 +68,6 @@ set completeopt-=preview
 
 " csv
 let g:csv_no_conceal = 1
-
-"go
-let g:go_fmt_autosave = 0
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<c-j>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
-
-" this mapping Enter key to <C-y> to chose the current highlight item
-" and close the selection list, same as other IDEs.
-" CONFLICT with some plugins like tpope/Endwise
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 syntax on
 set background=dark
@@ -155,14 +134,16 @@ nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>bb :Buffers<CR>
 nnoremap <Leader>t :Tags<CR>
 
+nmap <F2> :Vexplore<CR>
+
 map <F7> mzgg=G`z<CR>
+
 noremap <F4> :set hlsearch! hlsearch?<CR>
 
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-nmap <c-n> :bnext<CR>
 
 vnoremap // y/<C-R>"<CR>
 
