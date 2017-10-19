@@ -4,7 +4,7 @@ filetype off                  " required!
 call plug#begin('~/.vim/plugged')
 
 Plug 'gmarik/Vundle.vim'
-Plug 'bling/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'pangloss/vim-javascript'
@@ -38,8 +38,18 @@ let g:languagetool_jar="/usr/share/java/languagetool/languagetool-commandline.ja
 
 set encoding=utf-8
 
-" Airline
 set laststatus=2
+
+  let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
 
 "netrw
 let g:netrw_banner = 0
