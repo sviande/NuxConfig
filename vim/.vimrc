@@ -111,8 +111,11 @@ let g:csv_no_conceal = 1
 
 syntax on
 set background=dark
-let base16colorspace=256
-colorscheme base16-dracula
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
 set list
