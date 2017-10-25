@@ -28,6 +28,7 @@ Plug 'Quramy/tsuquyomi'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'mileszs/ack.vim'
 
 call plug#end()            " required
 
@@ -103,6 +104,12 @@ let g:ale_sign_column_always=1
 highlight link ALEWarningSign String
 highlight link ALEErrorSign Title
 
+"Ack.vim
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+cnoreabbrev Ack Ack!
+
 " disable complete preview
 set completeopt-=preview
 
@@ -176,6 +183,8 @@ nnoremap <Leader>n :ALENext<CR>
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>bb :Buffers<CR>
 nnoremap <Leader>t :Tags<CR>
+
+nnoremap <Leader>a :Ack!<Space>
 
 nmap <F2> :Vexplore<CR>
 
