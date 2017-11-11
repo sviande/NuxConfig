@@ -110,6 +110,9 @@ if executable('ag')
 endif
 cnoreabbrev Ack Ack!
 
+"fzf
+let g:fzf_layout = {}
+
 " disable complete preview
 set completeopt-=preview
 
