@@ -42,7 +42,7 @@ set laststatus=2
 let g:lightline = {
 \ 'colorscheme': 'wombat',
 \ 'active': {
-\   'left': [['mode', 'paste'], ['fileencoding', 'filename', 'modified']],
+\   'left': [['mode', 'paste', 'spell'], ['fileencoding', 'relativepath', 'modified']],
 \   'right': [['lineinfo'], ['percent'], ['readonly', 'linter_warnings', 'linter_errors', 'linter_ok']]
 \ },
 \ 'component_expand': {
