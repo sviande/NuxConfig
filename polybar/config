@@ -202,9 +202,18 @@ toggle-off-foreground = #66
 
 [module/cpu]
 type = internal/cpu
+format = <label> <ramp-coreload>
 interval = 2
 label = %{F#ff}%{F#cc} %percentage%
 label-underline = ${xrdb:color1}
+ramp-coreload-0 = ▁
+ramp-coreload-1 = ▂
+ramp-coreload-2 = ▃
+ramp-coreload-3 = ▄
+ramp-coreload-4 = ▅
+ramp-coreload-5 = ▆
+ramp-coreload-6 = ▇
+ramp-coreload-7 = █
 
 
 [module/memory]
