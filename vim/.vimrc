@@ -29,6 +29,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
 call plug#end()            " required
 
