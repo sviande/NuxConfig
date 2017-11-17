@@ -29,7 +29,6 @@ source "$HOME/.config/zsh/aliases.zsh"
 source "$HOME/.config/zsh/prompt.zsh"
 source "$HOME/.config/zsh/functions.zsh"
 
-export FZF_CTRL_R_OPTS='--no-sort'
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
