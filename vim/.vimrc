@@ -19,7 +19,6 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'diepm/vim-rest-console'
 Plug 'w0rp/ale'
 Plug 'avakhov/vim-yaml'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'dpelle/vim-LanguageTool'
