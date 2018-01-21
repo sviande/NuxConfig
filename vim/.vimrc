@@ -104,6 +104,7 @@ let g:ale_sign_warning='✗'
 let g:ale_sign_column_always=1
 highlight link ALEWarningSign String
 highlight link ALEErrorSign Title
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 "Ack.vim
 if executable('ag')
