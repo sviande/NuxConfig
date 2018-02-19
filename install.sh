@@ -13,6 +13,7 @@ ln -s ~/.config/vim/plugin ~/.vim/plugin
 ln -s ~/.config/zsh/.zshrc ~/.zshrc
 ln -s ~/.config/zsh/.zprofile ~/.zprofile
 ln -s ~/.config/zsh/.zshenv ~/.zshenv
+ln -s ~/.config/zsh/.zimrc ~/.zimrc
 
 vim -E -s -c "source ~/.vimrc" -c PlugInstall -c qa
 mkdir -p ~/tmp/vim-undo
