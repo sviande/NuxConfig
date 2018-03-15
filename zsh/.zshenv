@@ -7,12 +7,8 @@ else
         export TERM='xterm-color'
 fi
 
-setopt INC_APPEND_HISTORY
-HISTFILE=~/.config/zsh/.history
-HISTSIZE=10000
-SAVEHIST=10000
-export HISTFILE SAVEHIST
 export GOPATH=~/dev/go
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
 
 
 NPM_PACKAGES="${HOME}/.npm-packages"
