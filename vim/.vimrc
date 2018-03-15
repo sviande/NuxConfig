@@ -16,7 +16,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'chrisbra/csv.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'diepm/vim-rest-console'
+Plug 'aquach/vim-http-client'
 Plug 'w0rp/ale'
 Plug 'avakhov/vim-yaml'
 Plug 'mxw/vim-jsx'
