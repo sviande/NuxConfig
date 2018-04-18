@@ -14,7 +14,6 @@ Plug 'kurayama/systemd-vim-syntax'
 Plug 'chriskempson/base16-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'chrisbra/csv.vim'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'aquach/vim-http-client'
 Plug 'w0rp/ale'
