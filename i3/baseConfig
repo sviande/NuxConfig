@@ -165,29 +165,28 @@ gaps outer 0
 hide_edge_borders smart
 exec_always --no-startup-id sh .config/polybar/launch.sh
 
-## Base16 Flat
+## Base16 Material Dark
 # Author: Chris Kempson (http://chriskempson.com)
 #
 # You can use these variables anywhere in the i3 configuration file.
-
-set $base00 #2C3E50
-set $base01 #34495E
-set $base02 #7F8C8D
-set $base03 #95A5A6
-set $base04 #BDC3C7
-set $base05 #e0e0e0
-set $base06 #f5f5f5
-set $base07 #ECF0F1
-set $base08 #E74C3C
-set $base09 #E67E22
-set $base0A #F1C40F
-set $base0B #2ECC71
-set $base0C #1ABC9C
-set $base0D #3498DB
-set $base0E #9B59B6
-set $base0F #be643c
-
 # Basic color configuration using the Base16 variables for windows and borders.
+set $base00 #212121
+set $base01 #303030
+set $base02 #353535
+set $base03 #4a4a4a
+set $base04 #b2ccd6
+set $base05 #eeffff
+set $base06 #eeffff
+set $base07 #ffffff
+set $base08 #f07178
+set $base09 #f78c6c
+set $base0A #ffcb6b
+set $base0B #c3e88d
+set $base0C #89ddff
+set $base0D #82aaff
+set $base0E #c792ea
+set $base0F #ff5370
+
 # Property Name         Border  BG      Text    Indicator Child Border
 client.focused          $base05 $base0D $base00 $base0D $base0D
 client.focused_inactive $base01 $base01 $base05 $base03 $base01

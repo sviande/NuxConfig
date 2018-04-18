@@ -41,7 +41,7 @@ let g:languagetool_jar="/usr/share/java/languagetool/languagetool-commandline.ja
 set laststatus=2
 " Lightline
 let g:lightline = {
-\ 'colorscheme': 'wombat',
+\ 'colorscheme': 'solarized',
 \ 'active': {
 \   'left': [['mode', 'paste', 'spell'], ['fileencoding', 'relativepath', 'modified']],
 \   'right': [['lineinfo'], ['percent'], ['readonly', 'linter_warnings', 'linter_errors', 'linter_ok']]

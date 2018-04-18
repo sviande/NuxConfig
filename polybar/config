@@ -19,9 +19,8 @@ height = 20
 offset-x = 0
 offset-y = 0
 
-;background = ${xrdb:color9}
-background = ${xrdb:color0}
-foreground = ${xrdb:color21}
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
 
 ;lineheight = 1
 ;linecolor = #555
@@ -67,9 +66,8 @@ height = 20
 offset-x = 0
 offset-y = 0
 
-;background = ${xrdb:color9}
-background = ${xrdb:color0}
-foreground = ${xrdb:color21}
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
 
 ;lineheight = 1
 ;linecolor = #555
@@ -115,9 +113,8 @@ height = 20
 offset-x = 0
 offset-y = 0
 
-;background = ${xrdb:color9}
-background = ${xrdb:color0}
-foreground = ${xrdb:color21}
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
 
 ;lineheight = 1
 ;linecolor = #555
