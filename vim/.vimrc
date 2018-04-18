@@ -33,6 +33,7 @@ Plug 'Valloric/MatchTagAlways'
 
 call plug#end()            " required
 
+runtime macros/matchit.vim
 
 let g:mta_use_matchparen_group = 1
 let g:mta_filetypes = {
