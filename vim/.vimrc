@@ -29,8 +29,19 @@ Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'bumaociyuan/vim-swift'
+Plug 'Valloric/MatchTagAlways'
 
 call plug#end()            " required
+
+
+let g:mta_use_matchparen_group = 1
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'javascript.jsx' : 1,
+    \}
 
 " Language spell
 au BufRead *.txt setlocal spell spelllang=fr
