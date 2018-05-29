@@ -32,7 +32,28 @@ Plug 'bumaociyuan/vim-swift'
 Plug 'Valloric/MatchTagAlways'
 Plug 'tpope/vim-surround'
 
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+
 call plug#end()            " required
+
+let g:deoplete#enable_at_startup = 1
+
+" tern
+let g:deoplete#sources#ternjs#docs = 1
+let g:tern#command = ["tern"]
+let g:tern#arguments = ["--persistent"]
+
+let g:LanguageClient_serverCommands = {
+    \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+    \ }
 
 runtime macros/matchit.vim
 
