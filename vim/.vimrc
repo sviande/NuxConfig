@@ -30,6 +30,7 @@ Plug 'mileszs/ack.vim'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'bumaociyuan/vim-swift'
 Plug 'Valloric/MatchTagAlways'
+Plug 'tpope/vim-surround'
 
 call plug#end()            " required
 
