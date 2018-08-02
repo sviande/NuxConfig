@@ -1,7 +1,8 @@
+URxvt*font: xft:Fira Code:style=Retina:pixelsize=14:antialias=true:hinting=true
+
 URxvt*scrollstyle:                   plain
 URxvt*scrollBar:                     false
 URxvt*tintColor:                     white
-URxvt*font:             xft:Fira Code Retina:size=9:antialias=true
 URxvt.depth:                         32ursorBlink:  true
 urxvt*cursorColor:  #c1c9c9
 
