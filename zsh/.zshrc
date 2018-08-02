@@ -1,15 +1,3 @@
-#
-# User configuration sourced by interactive shells
-#
-#
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  sh ~/bin/startXEnv.sh
-  startx
-fi
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 source "$HOME/.config/zsh/aliases.zsh"
 
 export EDITOR=/usr/bin/vim
@@ -20,5 +8,17 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # Change default zim location
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
+
 # Start zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
+
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+bindkey -v
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
