@@ -14,7 +14,6 @@ export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 bindkey -v
 bindkey '^P' up-history
@@ -22,3 +21,5 @@ bindkey '^N' down-history
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
