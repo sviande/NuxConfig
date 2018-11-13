@@ -30,7 +30,6 @@ Plug 'mileszs/ack.vim'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'bumaociyuan/vim-swift'
 Plug 'tpope/vim-surround'
-Plug 'whiteinge/diffconflicts'
 
 call plug#end()            " required
 
