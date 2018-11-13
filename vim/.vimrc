@@ -30,6 +30,7 @@ Plug 'mileszs/ack.vim'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'bumaociyuan/vim-swift'
 Plug 'tpope/vim-surround'
+Plug 'maximbaz/lightline-ale'
 
 call plug#end()            " required
 
@@ -53,49 +54,29 @@ let g:languagetool_jar="/usr/share/java/languagetool/languagetool-commandline.ja
 set laststatus=2
 " Lightline
 let g:lightline = {
-\ 'colorscheme': 'solarized',
+\ 'colorscheme': 'seoul256',
 \ 'active': {
 \   'left': [['mode', 'paste', 'spell'], ['fileencoding', 'relativepath', 'modified']],
-\   'right': [['lineinfo'], ['percent'], ['readonly', 'linter_warnings', 'linter_errors', 'linter_ok']]
+\   'right': [['lineinfo'], ['percent'], ['readonly', 'linter_checking', 'linter_warnings', 'linter_errors', 'linter_ok']]
 \ },
 \ 'component_expand': {
-\   'linter_warnings': 'LightlineLinterWarnings',
-\   'linter_errors': 'LightlineLinterErrors',
-\   'linter_ok': 'LightlineLinterOK'
+\   'linter_checking': 'lightline#ale#checking',
+\   'linter_warnings': 'lightline#ale#warnings',
+\   'linter_errors': 'lightline#ale#errors',
+\   'linter_ok': 'lightline#ale#ok',
 \ },
 \ 'component_type': {
-\   'readonly': 'error',
+\   'linter_checking': 'left',
 \   'linter_warnings': 'warning',
-\   'linter_errors': 'error'
+\   'linter_errors': 'error',
+\   'linter_ok': 'left',
 \ },
 \ }
 
-function! LightlineLinterWarnings() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '' : printf('%d ◆', all_non_errors)
-endfunction
-function! LightlineLinterErrors() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '' : printf('%d ✗', all_errors)
-endfunction
-function! LightlineLinterOK() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '✓ ' : ''
-endfunction
-
-" Update and show lightline but only if it's visible (e.g., not in Goyo)
-autocmd User ALELint call s:MaybeUpdateLightline()
-function! s:MaybeUpdateLightline()
-  if exists('#lightline')
-    call lightline#update()
-  end
-endfunction
+let g:lightline#ale#indicator_checking = "\uf110 "
+let g:lightline#ale#indicator_warnings = "\uf071 "
+let g:lightline#ale#indicator_errors = "\uf05e "
+let g:lightline#ale#indicator_ok = "\uf00c "
 
 "netrw
 let g:netrw_banner = 0
@@ -111,12 +92,12 @@ let g:gitgutter_sign_removed = '●'
 let g:gitgutter_sign_modified_removed = '●'
 
 "Ale
-let g:ale_sign_error='▲'
-let g:ale_sign_warning='✗'
+let g:ale_sign_error="\uf05e"
+let g:ale_sign_warning="\uf071"
 let g:ale_sign_column_always=1
 highlight link ALEWarningSign String
 highlight link ALEErrorSign Title
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_echo_msg_format = '%severity%-%linter%: %s '
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
