@@ -23,3 +23,5 @@ bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /usr/bin/aws_zsh_completer.sh
