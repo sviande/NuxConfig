@@ -24,3 +24,5 @@
 	prompt = false
 [mergetool]
 	keepBackup = false
+[rebase]
+	autoStash = true
