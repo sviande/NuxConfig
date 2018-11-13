@@ -18,14 +18,9 @@
 
 [grep]
   linenumber = true
-[merge]
-	tool = diffconflicts
 [diff]
 	tool = vimdiff
 [difftool]
 	prompt = false
-[mergetool "diffconflicts"]
-	cmd = vim -c DiffConflicts \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
-	trustExitCode = true
 [mergetool]
 	keepBackup = false
