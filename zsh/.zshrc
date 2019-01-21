@@ -1,3 +1,9 @@
+if [ "$(tty)" = "/dev/tty1" ]; then
+  eval $(/usr/bin/gnome-keyring-daemon -d --start --components=pkcs11,secrets,ssh)
+  export SSH_AUTH_SOCK
+  sway 2> /tmp/sway_output
+  exit 0
+fi
 source "$HOME/.config/zsh/aliases.zsh"
 
 export EDITOR=/usr/bin/vim
