@@ -64,9 +64,9 @@ default_border pixel 1
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 input 1204:8197:HID_04b4:2005 {
-  xkb_layout "us_intl"
-  xkb_options "caps:swapescape"
-  xkb_variant ",compose:rctrl"
+  xkb_layout "us"
+  xkb_options "compose:rctrl,caps:swapescape"
+  xkb_variant "altgr-intl"
 }
 
 
@@ -222,22 +222,25 @@ client.background       $base07
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-  position top
+    position top
+    status_command py3status -c ~/.config/i3/pystatus.conf
+    font FiraCode 10
     colors {
       background $base00
-        separator  $base01
-        statusline $base04
+      separator  $base01
+      statusline $base04
 
-        # State             Border  BG      Text
-        focused_workspace   $base05 $base0D $base00
-        active_workspace    $base05 $base03 $base00
-        inactive_workspace  $base03 $base01 $base05
-        urgent_workspace    $base08 $base08 $base00
-        binding_mode        $base00 $base0A $base00
+      # State             Border  BG      Text
+      focused_workspace   $base05 $base0D $base00
+      active_workspace    $base05 $base03 $base00
+      inactive_workspace  $base03 $base01 $base05
+      urgent_workspace    $base08 $base08 $base00
+      binding_mode        $base00 $base0A $base00
     }
 }
 
 exec xrdb ~/.Xresources
 exec redshift -m wayland
+exec mako --default-timeout 15000 --markup 1
 
 include /etc/sway/config.d/*
