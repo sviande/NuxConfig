@@ -96,7 +96,8 @@ input 1204:8197:HID_04b4:2005 {
     # exit sway (logs you out of your wayland session)
     bindsym $mod+Shift+e exit
     bindsym $mod+n exec termite --name=launcher -e "bash -c 'compgen -c | sort -u | fzf --no-extended --print-query | tail -n1 | xargs -r swaymsg -t command exec'"
-    for_window [app_id="^launcher$"] floating enable, border none
+    bindsym $mod+b exec termite --name=launcher -e "bash switchWindows"
+    for_window [app_id="^launcher$"] floating enable
 
 #
 # Moving around:
@@ -155,7 +156,6 @@ input 1204:8197:HID_04b4:2005 {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
