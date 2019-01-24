@@ -8,12 +8,14 @@ else
 fi
 
 export GOPATH=~/dev/go
-export QT_AUTO_SCREEN_SCALE_FACTOR=0
-
+export GDK_BACKEND=wayland
 
 NPM_PACKAGES="${HOME}/.npm-packages"
 
+
 PATH="$NPM_PACKAGES/bin:$PATH"
+PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
