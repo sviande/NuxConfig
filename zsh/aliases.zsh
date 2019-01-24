@@ -15,3 +15,4 @@ alias svi="sudo -E vim"
 alias pong='ping free.fr -i 10'
 
 alias dit='docker exec -i -t'
+alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get --name {1}' | cut -d \" \" -f 1 | emoji-fzf get | xclip"
