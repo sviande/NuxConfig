@@ -26,9 +26,13 @@ output * bg ~/wallpapers/current.png stretch
 #
 # Example configuration:
 #
-output VGA-1 resolution 1920x1080 position 0,0
-output HDMI-A-1 resolution 1920x1080 position 1920,0
-output eDP-1 resolution 1920x1080 position 960,1080
+#output VGA-1 resolution 1920x1080 position 0,0
+#output HDMI-A-1 resolution 1920x1080 position 1920,0
+#output eDP-1 resolution 1920x1080 position 960,1080
+
+output VGA-1 resolution 1440x900 position 0,0
+output eDP-1 resolution 1920x1080 position 1440,0
+output HDMI-A-1 resolution 1440x900 position 3360,0
 
 workspace 1 output eDP-1
 workspace 2 output eDP-1
@@ -67,6 +71,8 @@ input 1204:8197:HID_04b4:2005 {
   xkb_layout "us"
   xkb_options "compose:rctrl,caps:swapescape"
   xkb_variant "altgr-intl"
+  repeat_rate 100
+  repeat_delay 250
 }
 
 
