@@ -30,4 +30,4 @@ bindkey '^w' backward-kill-word
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /usr/bin/aws_zsh_completer.sh
+[ -f /usr/bin/aws_zsh_completer.sh ] && source /usr/bin/aws_zsh_completer.sh
