@@ -101,9 +101,10 @@ input 1204:8197:HID_04b4:2005 {
 
     # exit sway (logs you out of your wayland session)
     bindsym $mod+Shift+e exit
-    bindsym $mod+n exec termite --name=launcher -e "bash -c 'compgen -c | sort -u | fzf --no-extended --print-query | tail -n1 | xargs -r swaymsg -t command exec'"
     bindsym $mod+b exec termite --name=launcher -e "bash switchWindows"
     for_window [app_id="^launcher$"] floating enable
+
+    bindsym $mod+n exec makoctl dismiss
 
 #
 # Moving around:
@@ -165,7 +166,7 @@ input 1204:8197:HID_04b4:2005 {
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
+    bindsym $mod+s sticky toggle
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
