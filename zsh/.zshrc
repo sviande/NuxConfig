@@ -1,7 +1,7 @@
 if [ "$(tty)" = "/dev/tty1" ]; then
   eval $(/usr/bin/gnome-keyring-daemon -d --start --components=pkcs11,secrets,ssh)
   export SSH_AUTH_SOCK
-  sway 2> /tmp/sway_output
+  env QT_WAYLAND_FORCE_DPI=physical GDK_BACKEND=wayland QT_QPA_PLATFORM=wayland-egl CLUTTER_BACKEND=wayland SDL_VIDEODRIVER=wayland BEMENU_BACKEND=wayland sway 2> /tmp/sway_output
   exit 0
 fi
 source "$HOME/.config/zsh/aliases.zsh"
