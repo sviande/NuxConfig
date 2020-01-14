@@ -112,14 +112,6 @@ bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
-
-if [ "$(tty)" = "/dev/tty1" ]; then
-  eval $(/usr/bin/gnome-keyring-daemon -d --start --components=pkcs11,secrets,ssh)
-  export SSH_AUTH_SOCK
-  env QT_WAYLAND_FORCE_DPI=physical GDK_BACKEND=wayland QT_QPA_PLATFORM=wayland-egl CLUTTER_BACKEND=wayland SDL_VIDEODRIVER=wayland BEMENU_BACKEND=wayland sway 2> /tmp/sway_output
-  exit 0
-fi
-
 source "$HOME/.config/zsh/aliases.zsh"
 
 
@@ -153,3 +145,10 @@ nvm() {
     return 1
   fi
 }
+
+if [ "$(tty)" = "/dev/tty1" ]; then
+  eval $(/usr/bin/gnome-keyring-daemon -d --start --components=pkcs11,secrets,ssh)
+  export SSH_AUTH_SOCK
+  exec sway 2> /tmp/sway_output
+  exit 0
+fi
