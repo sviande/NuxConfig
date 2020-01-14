@@ -18,21 +18,32 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'aquach/vim-http-client'
 Plug 'w0rp/ale'
 Plug 'avakhov/vim-yaml'
-Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'dpelle/vim-LanguageTool'
 Plug 'leafgarland/typescript-vim'
-Plug 'Quramy/tsuquyomi'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf'}
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'bumaociyuan/vim-swift'
 Plug 'tpope/vim-surround'
 Plug 'maximbaz/lightline-ale'
 
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+
 call plug#end()            " required
+
+function! s:lsp_install() abort
+  setlocal omnifunc=lsp#complete
+endfunction
+
+augroup lsp_install
+  au!
+  autocmd User lsp_server_init call s:lsp_install()
+augroup END
 
 
 runtime macros/matchit.vim
@@ -73,10 +84,10 @@ let g:lightline = {
 \ },
 \ }
 
-let g:lightline#ale#indicator_checking = "\uf110 "
-let g:lightline#ale#indicator_warnings = "\uf071 "
-let g:lightline#ale#indicator_errors = "\uf05e "
-let g:lightline#ale#indicator_ok = "\uf00c "
+let g:lightline#ale#indicator_checking = "⟳ "
+let g:lightline#ale#indicator_warnings = "⚠ "
+let g:lightline#ale#indicator_errors = "☠ "
+let g:lightline#ale#indicator_ok = "☑ "
 
 "netrw
 let g:netrw_banner = 0
@@ -92,8 +103,8 @@ let g:gitgutter_sign_removed = '●'
 let g:gitgutter_sign_modified_removed = '●'
 
 "Ale
-let g:ale_sign_error="\uf05e"
-let g:ale_sign_warning="\uf071"
+let g:ale_sign_error="☠"
+let g:ale_sign_warning="⚠"
 let g:ale_sign_column_always=1
 highlight link ALEWarningSign String
 highlight link ALEErrorSign Title
