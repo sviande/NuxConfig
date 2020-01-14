@@ -15,17 +15,18 @@ else
 fi
 
 export GOPATH=~/dev/go
-export GDK_BACKEND=wayland
 
 NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
 PATH="$HOME/bin:$PATH"
 PATH="$HOME/dev/go/bin:$PATH"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$PATH"
 
 BROWSER=firefox-developer-edition
 export BROWSER
 
-# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
-unset MANPATH # delete if you already modified MANPATH elsewhere in your config
-export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+export EDITOR=/usr/bin/vim
+
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+export MOZ_ENABLE_WAYLAND=1
