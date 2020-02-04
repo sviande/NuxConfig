@@ -259,3 +259,4 @@ bar {
 exec xrdb ~/.Xresources
 exec redshift -m wayland
 exec mako --default-timeout 15000 --markup 1
+exec kanshi
