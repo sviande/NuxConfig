@@ -79,7 +79,7 @@ default_border pixel 1
 # Read `man 5 sway-input` for more information about this section.
 input 1204:8197:HID_04b4:2005 {
   xkb_layout "us"
-  xkb_options "compose:rctrl,caps:swapescape"
+  xkb_options "compose:menu,caps:swapescape"
   xkb_variant "altgr-intl"
   repeat_rate 100
   repeat_delay 250
