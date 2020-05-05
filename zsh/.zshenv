@@ -16,10 +16,9 @@ fi
 
 export GOPATH=~/dev/go
 
-NPM_PACKAGES="${HOME}/.npm-packages"
-PATH="$NPM_PACKAGES/bin:$PATH"
 PATH="$HOME/bin:$PATH"
 PATH="$HOME/dev/go/bin:$PATH"
+PATH="$PATH:`yarn global bin`"
 export PATH="$PATH"
 
 BROWSER=firefox-developer-edition
