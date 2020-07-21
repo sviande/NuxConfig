@@ -137,8 +137,10 @@ let g:csv_no_conceal = 1
 syntax on
 set background=dark
 
+execute "set t_8f=\e[38;2;%lu;%lu;%lum"
+execute "set t_8b=\e[48;2;%lu;%lu;%lum"
+set termguicolors
 if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
   source ~/.vimrc_background
 endif
 
@@ -155,7 +157,6 @@ set shiftwidth=2
 set softtabstop=2
 set scrolloff=15
 set tw=0
-set t_Co=256
 
 set wildmenu
 set wildmode=longest:full,full
