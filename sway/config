@@ -99,6 +99,7 @@ input 1204:8197:HID_04b4:2005 {
 
     # start your launcher
     bindsym $mod+d exec $menu
+    bindsym $mod+b exec switchWindows
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
