@@ -154,3 +154,8 @@ if [ "$(tty)" = "/dev/tty1" ]; then
 fi
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# sets the title to cwd
+precmd () { print -Pn "\e]1;%2~\a" ; print -Pn "\e]2;[%n@%m] %~\a" }
+# sets title to running process
+preexec () { print -Pn "\e]1;$1\a" ; print -Pn "\e]2;$1\a" }
