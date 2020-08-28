@@ -1,19 +1,16 @@
-## Base16 Material Darker
-# Author: Nate Peterson
-
-set $base00 #212121
-set $base01 #303030
-set $base02 #353535
-set $base03 #4A4A4A
-set $base04 #B2CCD6
-set $base05 #EEFFFF
-set $base06 #EEFFFF
-set $base07 #FFFFFF
-set $base08 #F07178
-set $base09 #F78C6C
-set $base0A #FFCB6B
-set $base0B #C3E88D
-set $base0C #89DDFF
-set $base0D #82AAFF
-set $base0E #C792EA
-set $base0F #FF5370
+set $base00 #1B2B34
+set $base01 #343D46
+set $base02 #4F5B66
+set $base03 #65737E
+set $base04 #A7ADBA
+set $base05 #C0C5CE
+set $base06 #CDD3DE
+set $base07 #D8DEE9
+set $base08 #EC5f67
+set $base09 #F99157
+set $base0A #FAC863
+set $base0B #99C794
+set $base0C #5FB3B3
+set $base0D #6699CC
+set $base0E #C594C5
+set $base0F #AB7967
