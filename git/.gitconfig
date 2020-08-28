@@ -26,3 +26,5 @@
 	keepBackup = false
 [rebase]
 	autoStash = true
+[merge]
+	tool = vimdiff
