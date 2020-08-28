@@ -17,7 +17,8 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu rofi -show run
+set $menu dmenu-wl_run  -b -i -fn 'Fira Code 12' -nb '#1B2B34' -nf '#65737E' -sb '#6699CC' -sf '#1B2B34'
+
 
 ### Output configuration
 #
