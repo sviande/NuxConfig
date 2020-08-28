@@ -152,3 +152,5 @@ if [ "$(tty)" = "/dev/tty1" ]; then
   exec sway >! /tmp/sway_output
   exit 0
 fi
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
