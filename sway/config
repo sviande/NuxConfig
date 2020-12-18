@@ -241,8 +241,8 @@ client.background       $base07
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-    status_command py3status -c ~/.config/i3/pystatus.conf
-    font FiraCode 10
+    swaybar_command waybar
+    font Fira Code 10
     colors {
       background $base00
       separator  $base01
