@@ -106,7 +106,7 @@
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        "interface": "wlp2*", // (Optional) To force the use of this interface
+        "interface": "wlp5*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%)  {bandwidthDownOctets}↓↑{bandwidthUpOctets}",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": " (No IP)",
@@ -114,7 +114,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "network#eth": {
-        "interface": "enp3s*", // (Optional) To force the use of this interface
+        "interface": "enp4s*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{bandwidthDownOctets} ↓ {ipaddr} ↑ {bandwidthUpOctets}",
         "format-linked": "{ifname} (No IP) ",
