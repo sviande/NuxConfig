@@ -1,4 +1,3 @@
-#
 # User configuration sourced by interactive shells
 #
 
@@ -28,56 +27,6 @@ bindkey -e
 
 # Remove path separator from WORDCHARS.
 WORDCHARS=${WORDCHARS//[\/]}
-
-
-# --------------------
-# Module configuration
-# --------------------
-
-#
-# completion
-#
-
-# Set a custom path for the completion dump file.
-# If none is provided, the default ${ZDOTDIR:-${HOME}}/.zcompdump is used.
-#zstyle ':zim:completion' dumpfile "${ZDOTDIR:-${HOME}}/.zcompdump-${ZSH_VERSION}"
-
-#
-# input
-#
-
-# Append `../` to your input for each `.` you type after an initial `..`
-#zstyle ':zim:input' double-dot-expand yes
-
-#
-# termtitle
-#
-
-# Set a custom terminal title format using prompt expansion escape sequences.
-# See http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Simple-Prompt-Escapes
-# If none is provided, the default '%n@%m: %~' is used.
-#zstyle ':zim:termtitle' format '%1~'
-
-#
-# zsh-autosuggestions
-#
-
-# Customize the style that the suggestions are shown with.
-# See https://github.com/zsh-users/zsh-autosuggestions/blob/master/README.md#suggestion-highlight-style
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
-
-#
-# zsh-syntax-highlighting
-#
-
-# Set what highlighters will be used.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-
-# Customize the main highlighter styles.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md#how-to-tweak-it
-#typeset -A ZSH_HIGHLIGHT_STYLES
-#ZSH_HIGHLIGHT_STYLES[comment]='fg=10'
 
 # ------------------
 # Initialize modules
@@ -115,8 +64,8 @@ bindkey -M vicmd 'j' history-substring-search-down
 source "$HOME/.config/zsh/aliases.zsh"
 
 
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+#BASE16_SHELL=$HOME/.config/base16-shell/
+#[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 bindkey -v
 bindkey '^ ' autosuggest-accept
@@ -147,15 +96,13 @@ nvm() {
 }
 
 if [ "$(tty)" = "/dev/tty1" ]; then
-  eval $(/usr/bin/gnome-keyring-daemon -d --start --components=pkcs11,secrets,ssh)
-  export SSH_AUTH_SOCK
-  exec sway >! /tmp/sway_output
+  eval $(keychain --eval --quiet --noask --agents gpg,ssh id_rsa ~/.ssh/capssionCampaign.pem)
+  exec sway &>! /tmp/sway_output
   exit 0
 fi
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # sets the title to cwd
 precmd () { print -Pn "\e]1;%2~\a" ; print -Pn "\e]2;[%n@%m] %~\a" }
 # sets title to running process
 preexec () { print -Pn "\e]1;$1\a" ; print -Pn "\e]2;$1\a" }
+

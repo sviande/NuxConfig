@@ -12,7 +12,7 @@ export GOPATH=~/dev/go
 
 PATH="$HOME/bin:$PATH"
 PATH="$HOME/dev/go/bin:$PATH"
-PATH="$PATH:`yarn global bin`"
+PATH="$PATH:$HOME/.yarn/bin"
 export PATH="$PATH"
 
 BROWSER=firefox-developer-edition
@@ -25,3 +25,5 @@ export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 export MOZ_ENABLE_WAYLAND=1
 export NVM_DIR="$HOME/.nvm"
 export NVM_SOURCE="/usr/share/nvm"
+export ZSH_AUTOSUGGEST_USE_ASYNC=1
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
