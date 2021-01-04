@@ -8,3 +8,7 @@
   output "Unknown 2470W D35EBBA000109" mode 1920x1080 position 0,0
   output "Unknown 2470W C68DABA002871" mode 1920x1080 position 1920,0 transform 90
 }
+{
+  output eDP-1 mode 1920x1080 position 0,0
+  output "Unknown 2470W C68DABA002871" mode 1920x1080 position 1920,0 transform 90
+}
