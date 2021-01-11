@@ -4,11 +4,7 @@
   output "BenQ Corporation BenQ E900W GA704441026" mode 1440x900 position 3360,0
 }
 {
-  output eDP-1 disable
-  output "Unknown 2470W D35EBBA000109" mode 1920x1080 position 0,0
-  output "Unknown 2470W C68DABA002871" mode 1920x1080 position 1920,0 transform 90
-}
-{
-  output eDP-1 mode 1920x1080 position 0,0
-  output "Unknown 2470W C68DABA002871" mode 1920x1080 position 1920,0 transform 90
+  output "Unknown 2470W D35EBBA000109" mode 1920x1080 position 0,0 transform 90
+  output "Unknown 0x004B 0x00000000" mode 1920x1080 position 1080,0
+  output "Unknown 2470W C68DABA002871" mode 1920x1080 position 3000,0 transform 90
 }
