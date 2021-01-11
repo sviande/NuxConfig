@@ -27,3 +27,5 @@ export NVM_DIR="$HOME/.nvm"
 export NVM_SOURCE="/usr/share/nvm"
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+export MAKEFLAGS=-j24
+export QT_QPA_PLATFORMTHEME=qt5ct
