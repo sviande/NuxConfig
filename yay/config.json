@@ -1,6 +1,6 @@
 {
 	"aururl": "https://aur.archlinux.org",
-	"buildDir": "/tmp/yay/",
+	"buildDir": "/home/moi/.cache/yay/",
 	"absdir": "/home/moi/.cache/yay/abs",
 	"editor": "",
 	"editorflags": "",
