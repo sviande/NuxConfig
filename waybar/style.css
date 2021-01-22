@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Fira Code Retina, Roboto,'Font Awesome 5', 'SFNS Display',  Helvetica, Arial, sans-serif;
+    font-family: Fira Code Medium, Roboto,'Font Awesome 5', 'SFNS Display',  Helvetica, Arial, sans-serif;
     font-size: 12px;
     min-height: 0;
 }
@@ -90,11 +90,16 @@ window#waybar.hidden {
 }
 
 #network.disabled {
-    background: #f53c3c;
+  color: #64727D;
+  opacity: 0.3;
+  background: #FFFFFF;
+
 }
 
 #network.disconnected {
-    background: #f53c3c;
+  color: #64727D;
+  opacity: 0.3;
+  background: #FFFFFF;
 }
 
 #pulseaudio {

@@ -107,26 +107,25 @@
     },
     "network#wifi": {
         "interface": "wlp5*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%)  {bandwidthDownOctets:>}↓↑{bandwidthUpOctets:>}",
+        "format-wifi": "{bandwidthDownOctets:<}↓↑{bandwidthUpOctets:>}",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {essid} ({signalStrength}%) =>{ipaddr}/{cidr}"
     },
     "network#eth": {
         "interface": "enp4s*", // (Optional) To force the use of this interface
-        "format-ethernet": "{bandwidthDownOctets:>} ↓  ↑ {bandwidthUpOctets:>}",
+        "format-ethernet": "{bandwidthDownOctets:<} ↓  ↑ {bandwidthUpOctets:>}",
         "format-linked": "",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "interval": 2
     },
     "network#hub": {
         "interface": "enp9s*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{bandwidthDownOctets:>} ↓  ↑ {bandwidthUpOctets:>}",
+        "format-ethernet": "{bandwidthDownOctets:<} ↓  ↑ {bandwidthUpOctets:>}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "interval": 2
     },
