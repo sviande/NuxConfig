@@ -1,16 +1,20 @@
-set $base00 #1B2B34
-set $base01 #343D46
-set $base02 #4F5B66
-set $base03 #65737E
-set $base04 #A7ADBA
-set $base05 #C0C5CE
-set $base06 #CDD3DE
-set $base07 #D8DEE9
-set $base08 #EC5f67
-set $base09 #F99157
-set $base0A #FAC863
-set $base0B #99C794
-set $base0C #5FB3B3
-set $base0D #6699CC
-set $base0E #C594C5
-set $base0F #AB7967
+## Base16 Harmonic16 Dark
+# Author: Jannik Siebert (https://github.com/janniks)
+
+set $base00 #0b1c2c
+set $base01 #223b54
+set $base02 #405c79
+set $base03 #627e99
+set $base04 #aabcce
+set $base05 #cbd6e2
+set $base06 #e5ebf1
+set $base07 #f7f9fb
+set $base08 #bf8b56
+set $base09 #bfbf56
+set $base0A #8bbf56
+set $base0B #56bf8b
+set $base0C #568bbf
+set $base0D #8b56bf
+set $base0E #bf568b
+set $base0F #bf5656
+
