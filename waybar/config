@@ -107,7 +107,7 @@
     },
     "network#wifi": {
         "interface": "wlp5*", // (Optional) To force the use of this interface
-        "format-wifi": "{bandwidthDownOctets:<}↓↑{bandwidthUpOctets:>}",
+        "format-wifi": "{bandwidthDownOctets:<} ↓  ↑ {bandwidthUpOctets:>}",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "",
         "format-disconnected": "Disconnected ⚠",
