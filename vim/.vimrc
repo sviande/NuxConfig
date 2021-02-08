@@ -127,6 +127,7 @@ cnoreabbrev Ack Ack!
 
 "fzf
 let g:fzf_layout = {}
+let g:fzf_preview_window = []
 
 " disable complete preview
 set completeopt-=preview
