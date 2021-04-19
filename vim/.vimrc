@@ -31,8 +31,6 @@ Plug 'maximbaz/lightline-ale'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 
 call plug#end()            " required
