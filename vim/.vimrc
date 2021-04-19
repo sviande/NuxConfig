@@ -24,7 +24,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf'}
 Plug 'junegunn/fzf.vim'
-Plug 'mileszs/ack.vim'
 Plug 'bumaociyuan/vim-swift'
 Plug 'tpope/vim-surround'
 Plug 'maximbaz/lightline-ale'
@@ -119,12 +118,6 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 
-"Ack.vim
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-cnoreabbrev Ack Ack!
-
 "fzf
 let g:fzf_layout = {}
 let g:fzf_preview_window = []
@@ -202,7 +195,7 @@ nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>bb :Buffers<CR>
 nnoremap <Leader>t :Tags<CR>
 
-nnoremap <Leader>a :Ack!<Space>
+nnoremap <Leader>a :Rg<CR>
 
 nmap <F2> :Vexplore<CR>
 
