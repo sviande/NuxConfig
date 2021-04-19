@@ -7,3 +7,4 @@ set -Ux QT_QPA_PLATFORMTHEME qt5ct
 set -x PATH $PATH $HOME/bin
 set -x PATH $PATH $HOME/dev/go/bin
 set -x PATH $PATH $HOME/.yarn/bin
+set -x PATH $PATH $HOME/.cargo/bin
