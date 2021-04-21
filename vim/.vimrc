@@ -213,6 +213,8 @@ nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>bb :Buffers<CR>
 nnoremap <Leader>t :Tags<CR>
 
+nnoremap <Leader>r :LspReferences<CR>
+
 nnoremap <Leader>a :Rg<Space>
 
 nmap <F2> :Vexplore<CR>
