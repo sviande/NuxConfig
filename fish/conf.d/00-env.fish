@@ -8,3 +8,4 @@ set -x PATH $PATH $HOME/bin
 set -x PATH $PATH $HOME/dev/go/bin
 set -x PATH $PATH $HOME/.yarn/bin
 set -x PATH $PATH $HOME/.cargo/bin
+set -x WLR_DRM_NO_MODIFIERS 1
