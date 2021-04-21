@@ -3,6 +3,10 @@
 # Harmonic16 Dark scheme by Jannik Siebert (https://github.com/janniks)
 
 function base16-harmonic-dark -d "base16 Harmonic16 Dark theme"
+    set options (fish_opt --short=t --long=test)
+    argparse $options -- $argv
+    set padded_seq_values (seq -w 0 21)
+
     # colors
     set color00 "0b/1c/2c" # Base 00 - Black
     set color01 "bf/8b/56" # Base 08 - Red
@@ -56,11 +60,26 @@ function base16-harmonic-dark -d "base16 Harmonic16 Dark theme"
     __put_template 21 $color21
 
     # foreground / background / cursor color
-     __put_template_var 10 $color_foreground
+    if test -n "$ITERM_SESSION_ID"
+      # iTerm2 proprietary escape codes
+      __put_template_custom Pg cbd6e2 # foreground
+      __put_template_custom Ph 0b1c2c # background
+      __put_template_custom Pi cbd6e2 # bold color
+      __put_template_custom Pj 405c79 # selection color
+      __put_template_custom Pk cbd6e2 # selected text color
+      __put_template_custom Pl cbd6e2 # cursor
+      __put_template_custom Pm 0b1c2c # cursor text
+
+    else
+      __put_template_var 10 $color_foreground
       if test "$BASE16_SHELL_SET_BACKGROUND" != false
         __put_template_var 11 $color_background
-     end
+        if string match -q -- '*rxvt*' $TERM
+          __put_template_var 708 $color_background # internal border (rxvt)
+        end
+      end
       __put_template_custom 12 ";7" # cursor (reverse video)
+    end
 
     set -gx fish_color_autosuggestion "627e99" brblack
     set -gx fish_pager_color_description "bfbf56" yellow
@@ -69,28 +88,13 @@ function base16-harmonic-dark -d "base16 Harmonic16 Dark theme"
     __base16_fish_shell_create_vimrc_background harmonic-dark
     set -U base16_fish_theme harmonic-dark
 
-    set -e color00
-    set -e color01
-    set -e color02
-    set -e color03
-    set -e color04
-    set -e color05
-    set -e color06
-    set -e color07
-    set -e color08
-    set -e color09
-    set -e color10
-    set -e color11
-    set -e color12
-    set -e color13
-    set -e color14
-    set -e color15
-    set -e color16
-    set -e color17
-    set -e color18
-    set -e color19
-    set -e color20
-    set -e color21
-    set -e color_foreground
-    set -e color_background
+    if test -n "$_flag_t"
+        set base16_colors
+        for seq_value in $padded_seq_values
+            set base16_colors $base16_colors $seq_value
+        end
+        set base16_colors $base16_colors
+
+        __base16_fish_shell_color_test $base16_colors
+    end
 end
