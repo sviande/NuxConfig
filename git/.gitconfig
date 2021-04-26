@@ -2,6 +2,10 @@
   email = sviande@gmail.com
   name = Sébastien Viande
 
+[core]
+  pager = delta
+
+
 [color]
   ui = true
 
@@ -18,13 +22,24 @@
 
 [grep]
   linenumber = true
-[diff]
-	tool = vimdiff
+
 [difftool]
-	prompt = false
+  prompt = false
 [mergetool]
-	keepBackup = false
+  keepBackup = false
 [rebase]
-	autoStash = true
+  autoStash = true
 [merge]
-	tool = vimdiff
+  tool = vimdiff
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
