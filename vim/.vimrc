@@ -15,7 +15,6 @@ Plug 'chriskempson/base16-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'chrisbra/csv.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'aquach/vim-http-client'
 Plug 'w0rp/ale'
 Plug 'avakhov/vim-yaml'
 Plug 'othree/html5.vim'
