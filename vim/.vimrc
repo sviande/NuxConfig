@@ -210,7 +210,9 @@ nnoremap <Leader>n :ALENext<CR>
 
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>bb :Buffers<CR>
-nnoremap <Leader>t :Tags<CR>
+nnoremap <Leader>tn :tabnext<CR>
+nnoremap <Leader>te :tabedit<CR>
+nnoremap <Leader>tp :tabprev<CR>
 
 nnoremap <Leader>r :LspReferences<CR>
 
