@@ -204,7 +204,7 @@ set undodir=~/tmp/vim-undo
 " Add keyboard shortcuts
 let mapleader = ","
 
-nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+nnoremap <Leader>tw :%s/\s\+$//e<CR>
 nnoremap <Leader>bd :bufdo bdelete<CR>
 nnoremap <Leader>n :ALENext<CR>
 
