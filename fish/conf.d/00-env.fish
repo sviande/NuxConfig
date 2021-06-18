@@ -1,7 +1,7 @@
 set -Ux EDITOR vim
 set -Ux BROWSER firefox-developer-edition
 set -Ux MAKE_FLAGS -j24
-set -Ux FZF_DEFAULT_COMMAND 'rg --files --no-ignore-vcs --hidden'
+set -Ux FZF_DEFAULT_COMMAND 'rg --files -hidden'
 set -Ux QT_QPA_PLATFORMTHEME qt5ct
 
 set -x PATH $PATH $HOME/bin
