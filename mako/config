@@ -3,7 +3,7 @@
 #
 # You can use these variables anywhere in the mako configuration file.
 
-font=Fira Code
+font=Fira Code 10
 background-color=#0b1c2c
 text-color=#cbd6e2
 border-color=#8b56bf
