@@ -1,4 +1,4 @@
-set -Ux EDITOR vim
+set -Ux EDITOR nvim
 set -Ux BROWSER firefox-developer-edition
 set -Ux MAKE_FLAGS -j24
 set -Ux FZF_DEFAULT_COMMAND 'rg --files --hidden'
