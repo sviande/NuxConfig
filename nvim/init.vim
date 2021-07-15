@@ -1,5 +1,6 @@
 lua require('plugins')
 lua require('lsp')
+lua require('completionSettings')
 
 syntax on
 set background=dark
