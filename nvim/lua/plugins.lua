@@ -14,5 +14,6 @@ use 'tpope/vim-surround'
 use 'chriskempson/base16-vim'
 use 'neovim/nvim-lspconfig'
 use 'nvim-lua/completion-nvim'
+use 'hoob3rt/lualine.nvim'
 
 end)
