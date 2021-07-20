@@ -45,13 +45,12 @@ local config = {
     lualine_x = {}
   },
   inactive_sections = {
-    -- these are to remove the defaults
-    lualine_a = {},
-    lualine_v = {},
-    lualine_y = {},
-    lualine_z = {},
-    lualine_c = {},
-    lualine_x = {}
+    lualine_c = {
+      {
+        'filename',
+        path = 1
+      }
+    }
   }
 }
 
