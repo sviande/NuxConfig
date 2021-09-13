@@ -8,7 +8,8 @@ use 'junegunn/fzf.vim'
 use 'w0rp/ale'
 use {
   'fatih/vim-go',
-  cmd = ':GoUpdateBinaries',
+  ft = {'go'},
+  cmd = ':GoUpdateBinaries'
 }
 use 'tpope/vim-surround'
 use 'chriskempson/base16-vim'
