@@ -66,6 +66,7 @@ end
 
 ins_left {
   'filename',
+  path = 1,
   condition = conditions.buffer_not_empty,
 }
 
@@ -111,11 +112,6 @@ ins_right {
   'fileformat',
   upper = true,
   icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-}
-
-ins_right {
-  'branch',
-  condition = conditions.check_git_workspace,
 }
 
 ins_right {
