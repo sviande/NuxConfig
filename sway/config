@@ -85,6 +85,7 @@ input 1:1:AT_Translated_Set_2_keyboard {
 #
     # start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod+Print exec /home/moi/bin/sc
 
     # kill focused window
     bindsym $mod+Shift+q kill
