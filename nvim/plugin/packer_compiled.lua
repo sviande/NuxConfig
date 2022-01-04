@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -71,49 +71,61 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ale = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/ale"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/w0rp/ale"
   },
   ["base16-vim"] = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/base16-vim"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/base16-vim",
+    url = "https://github.com/chriskempson/base16-vim"
   },
   ["completion-nvim"] = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/completion-nvim"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/completion-nvim",
+    url = "https://github.com/nvim-lua/completion-nvim"
   },
   fzf = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/fzf"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/fzf",
+    url = "https://github.com/junegunn/fzf"
   },
   ["fzf.vim"] = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/fzf.vim"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/fzf.vim",
+    url = "https://github.com/junegunn/fzf.vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/hoob3rt/lualine.nvim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-go"] = {
     commands = { ":GoUpdateBinaries" },
     loaded = false,
     needs_bufread = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/opt/vim-go"
+    only_cond = false,
+    path = "/home/moi/.local/share/nvim/site/pack/packer/opt/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   ["vim-surround"] = {
     loaded = true,
-    path = "/home/moi/.local/share/nvim/site/pack/packer/start/vim-surround"
+    path = "/home/moi/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 
