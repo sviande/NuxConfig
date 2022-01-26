@@ -13,3 +13,8 @@ set -x PATH $PATH $HOME/.cargo/bin
 set -x PATH $PATH /home/moi/dev/depot_tools/
 set -x WLR_DRM_NO_MODIFIERS 1
 set -x WLR_NO_HARDWARE_CURSORS 1
+
+set -x _microarchitecture 14
+set -x _localmodcfg y
+set -x use_numa n
+set -x use_tracers n
