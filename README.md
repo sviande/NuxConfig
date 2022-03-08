@@ -1,4 +1,4 @@
 NuxConfig
 =========
 
-Personel linux config (i3 wm, vim, bash zsh..)
+Personel linux config (Sway wm, (neo)vim, fish, bash, zsh..)
