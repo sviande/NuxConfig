@@ -256,3 +256,8 @@ bar {
 
 exec mako --default-timeout 15000 --markup 1
 exec kanshi
+exec set -x XDG_CURRENT_DESKTOP "sway"
+exec systemctl --user import-environment XDG_CURRENT_DESKTOP
+
+#Archlinux
+include /etc/sway/config.d/*
