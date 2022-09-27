@@ -2,6 +2,7 @@ lua require('plugins')
 lua require('lsp')
 lua require('completionSettings')
 lua require('statusSettings')
+lua require('treesitter')
 
 syntax on
 set background=dark

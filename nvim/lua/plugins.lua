@@ -12,7 +12,11 @@ use {
   cmd = ':GoUpdateBinaries'
 }
 use 'tpope/vim-surround'
-use 'chriskempson/base16-vim'
+use 'RRethy/nvim-base16'
+use {
+  'nvim-treesitter/nvim-treesitter',
+  run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+}
 use 'neovim/nvim-lspconfig'
 use 'nvim-lua/completion-nvim'
 use 'hoob3rt/lualine.nvim'
