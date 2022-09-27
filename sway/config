@@ -93,6 +93,7 @@ input 1:1:AT_Translated_Set_2_keyboard {
 
     # start your launcher
     bindsym $mod+d exec $menu
+    bindsym $mod+g exec rofi -show calc -modi calc -no-show-match -no-sort
     bindsym $mod+b exec switchWindows
 
     # Drag floating windows by holding down $mod and left mouse button.
